@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_e52a3c7e",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-21T02:23:35Z",
+      "side": 1,
+      "message": "\"Nedopustimiy\" slitno.",
+      "revId": "10534c797ee52b07d55fb21d6c58057f7fc594ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_253164ed",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-21T02:23:35Z",
+      "side": 1,
+      "message": "\"...\" \u003d\u003e \\u2026",
+      "revId": "10534c797ee52b07d55fb21d6c58057f7fc594ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_054d4072",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-21T02:23:35Z",
+      "side": 1,
+      "message": "\"Pozhaluysta, \" izlishne v perevode, ostavim etu vezhlivost\u0027 anglichanam.",
+      "revId": "10534c797ee52b07d55fb21d6c58057f7fc594ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_454b485a",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-21T02:23:35Z",
+      "side": 1,
+      "message": "Gde eto u nas v strane sim-kartu vmeste s ustroystvom kladut? \"Obratites\u0027 k instrukcii po ustanovke ili aktivacii vashey SIM-karti.\"",
+      "revId": "10534c797ee52b07d55fb21d6c58057f7fc594ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
