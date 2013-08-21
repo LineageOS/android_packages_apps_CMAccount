@@ -16,6 +16,24 @@
       "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_379cf768",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-08-21T08:25:12Z",
+      "side": 1,
+      "message": "I think yes, it\u0027s capital in most of the packages.",
+      "parentUuid": "baee8101_77927f59",
+      "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
