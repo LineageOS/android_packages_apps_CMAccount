@@ -1,0 +1,327 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_85e7f011",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "account",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_651d2c0f",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "Could you change this to \u0027OK\u0027?",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_65e40c0d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "account",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_25ee04ed",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "account",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_45f108cd",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "settings",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_05bae0e1",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "time settings",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e5bebcd3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "account",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c5b3b809",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "account",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_451a2819",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "email (lower case)",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_251724ef",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "min.",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_05d3003a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "... \u003d \\u2026",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e5d7dc21",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "changed (lower case)",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c5dcd848",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "I would change \u0027account\u0027 to \u0027Account\u0027",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a5b8b4e6",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "(...) occurred [while] communicating (...)",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_85ced081",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "I would change \u0027CyanogenMod\u0027 to \u0027CyanogenMod account\u0027 or just \u0027account\u0027",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_65cbec73",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "Let \u003e\u003e Allow",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_45c8e874",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "Let \u003e\u003e Allow",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_25c5e45a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "Let \u003e\u003e Allow",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_05a1c0a9",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-21T04:24:16Z",
+      "side": 1,
+      "message": "Let \u003e\u003e Allow",
+      "revId": "983cc21485bf843e48ad5e2936d3794c4a4fb90f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
