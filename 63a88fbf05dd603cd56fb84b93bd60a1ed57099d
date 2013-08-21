@@ -34,6 +34,74 @@
       "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_6d3e32ba",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-21T18:55:38Z",
+      "side": 1,
+      "message": "The capitalized \u0027A\u0027 in \u0027Account\u0027 definitely looks weird. I don\u0027t think it\u0027s correct to write it like this. Same applies to \u0027CyanogenMod Account\u0027, except in the app name itself.",
+      "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_4d4b6e5a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-21T18:55:38Z",
+      "side": 1,
+      "message": "...to use...",
+      "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_2d482a5b",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-21T18:55:38Z",
+      "side": 1,
+      "message": "to use",
+      "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_0d74469a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-21T18:55:38Z",
+      "side": 1,
+      "message": "to use",
+      "revId": "63a88fbf05dd603cd56fb84b93bd60a1ed57099d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
