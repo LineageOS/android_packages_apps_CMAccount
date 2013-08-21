@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "baee8101_174d7372",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "OK",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_85549054",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -30,6 +47,41 @@
       "writtenOn": "2013-08-21T05:31:00Z",
       "side": 1,
       "message": "J\u0027aurais plus vu \"date actuelle\". Idem pour en haut.",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_b75b472e",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "baee8101_65d88cf0",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_b77227ac",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "Bon, Email est un nom penible pour le francais, car il est difficile de choisir entre \"e-mail\" et \"mail\". Neanmoins, la majuscule est inutille, et je pense qu\u0027il pourrait etre envisageable de mettre le trait d\u0027union.",
       "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -70,6 +122,23 @@
     },
     {
       "key": {
+        "uuid": "baee8101_5762dbd9",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "Sans point",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_a5ec3490",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -87,6 +156,108 @@
     },
     {
       "key": {
+        "uuid": "baee8101_375f5710",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "ulterieurement",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_179b33cb",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "Seul un compte / Un compte seulement",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_d7a48b09",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "instructions liees a votre carte SIM ? (une sim n\u0027a pas d\u0027instructions...)",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_b7a907e2",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "Autoriser ... a acceder",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_97af23e3",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "idem",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_77acbfed",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "idem",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_65ff6c35",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -98,6 +269,23 @@
       "writtenOn": "2013-08-21T05:31:00Z",
       "side": 1,
       "message": "estimer -\u003e definir ?",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_57b9bb2d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-21T06:43:12Z",
+      "side": 1,
+      "message": "idem",
       "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
