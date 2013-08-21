@@ -173,6 +173,23 @@
     },
     {
       "key": {
+        "uuid": "baee8101_da43926b",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-08-21T18:17:58Z",
+      "side": 1,
+      "message": "rencontr(e)e",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_179b33cb",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
