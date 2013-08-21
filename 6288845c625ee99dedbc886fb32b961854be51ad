@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_85549054",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "Mauvais accent sur \"parametrage\".",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_65d88cf0",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "J\u0027aurais plus vu \"date actuelle\". Idem pour en haut.",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_05ee608b",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "Connexion a",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c5e738ab",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "Creation du",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a5ec3490",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "Erreur lors",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_65ff6c35",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-21T05:31:00Z",
+      "side": 1,
+      "message": "estimer -\u003e definir ?",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
