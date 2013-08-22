@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_d057f1c8",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-22T01:06:53Z",
+      "side": 1,
+      "message": "lishnyaya s pered %2$s",
+      "revId": "a8938082ce43cf25459a3a3a00e14f81aa445717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_100579c1",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-22T01:06:53Z",
+      "side": 1,
+      "message": "Mozhet a la Google: \"Vhod ne vypolnen\".",
+      "revId": "a8938082ce43cf25459a3a3a00e14f81aa445717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
