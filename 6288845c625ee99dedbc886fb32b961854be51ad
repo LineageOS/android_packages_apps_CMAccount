@@ -88,6 +88,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_ebc9eaad",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-22T10:14:58Z",
+      "side": 1,
+      "message": "En bon francais c\u0027est meme : courriel, mais c\u0027est jamais utilise. Sinon dans android par exemple pour ajouter un compte pop, c\u0027est \"e-mail\", je prefere garder ca pour etre uniforme.",
+      "parentUuid": "baee8101_b77227ac",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_05ee608b",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -224,6 +242,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_8bc13e83",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-22T10:14:58Z",
+      "side": 1,
+      "message": "Chez nous non, mais j\u0027imagine que dans d\u0027autre pays si.",
+      "parentUuid": "baee8101_d7a48b09",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_b7a907e2",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -235,6 +271,24 @@
       "writtenOn": "2013-08-21T06:43:12Z",
       "side": 1,
       "message": "Autoriser ... a acceder",
+      "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_6bbe1a01",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-22T10:14:58Z",
+      "side": 1,
+      "message": "J\u0027ai trouver une tournure equivalente et plus fluide a lire dans les Donnees de localisation par defaut du smartphone.",
+      "parentUuid": "baee8101_b7a907e2",
       "revId": "6288845c625ee99dedbc886fb32b961854be51ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
