@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 package com.cyanogenmod.account.gcm.model;
 
 public class WipeStartedMessage extends EncryptedMessage {
@@ -29,7 +30,8 @@ public class WipeStartedMessage extends EncryptedMessage {
         }
     }
 
-    public void setSequence(int sequence) {
+    public void setSequence(String keyId, int sequence) {
+        this.key_id = keyId;
         this.params = new Params(sequence);
     }
 }
