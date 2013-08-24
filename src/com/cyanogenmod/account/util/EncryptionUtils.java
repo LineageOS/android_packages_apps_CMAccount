@@ -19,18 +19,69 @@ package com.cyanogenmod.account.util;
 import android.util.Base64;
 import android.util.Log;
 import com.cyanogenmod.account.CMAccount;
+import com.cyanogenmod.account.encryption.ECKeyPair;
+import org.spongycastle.jce.ECNamedCurveTable;
+import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.math.ec.ECPoint;
 
-import javax.crypto.*;
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.KeyGenerator;
+import javax.crypto.Mac;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
-import java.security.*;
+import java.math.BigInteger;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.Key;
+import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 public class EncryptionUtils {
     private static final String TAG = EncryptionUtils.class.getSimpleName();
+
+    public static class ECDH {
+        private static final ECParameterSpec ecParameterSpec = ECNamedCurveTable.getParameterSpec("secp256r1");
+
+        private static BigInteger generatePrivateKey() {
+            // Generate private key.
+            BigInteger n = ecParameterSpec.getN();
+            BigInteger n1 = n.subtract(BigInteger.ONE);
+            BigInteger r = new BigInteger(n.bitLength(), new SecureRandom());
+            BigInteger privateKey = r.mod(n1).add(BigInteger.ONE);
+            return privateKey;
+        }
+
+        private static ECPoint generatePublicKey(BigInteger privateKey) {
+            return ecParameterSpec.getG().multiply(privateKey);
+        }
+
+        public static ECKeyPair generateKeyPair() {
+            BigInteger privateKey = generatePrivateKey();
+            ECPoint publicKey = generatePublicKey(privateKey);
+            return new ECKeyPair(publicKey, privateKey);
+        }
+
+        public static ECPoint getPublicKey(BigInteger x, BigInteger y) {
+            return ecParameterSpec.getCurve().createPoint(x, y, false);
+        }
+
+        public static BigInteger calculateSecret(BigInteger privateKey, ECPoint publicKey) {
+            ECPoint.Fp P = new ECPoint.Fp(ecParameterSpec.getCurve(), publicKey.getX(), publicKey.getY());
+            ECPoint S = P.multiply(privateKey);
+            return S.getX().toBigInteger();
+        }
+    }
 
     public static class PBKDF2 {
         public static String getDerivedKey(String password, String salt) {

@@ -16,7 +16,11 @@
 
 package com.cyanogenmod.account.auth;
 
-import android.app.AppGlobals;
+import com.cyanogenmod.account.api.request.AddPublicKeysRequest;
+import com.cyanogenmod.account.api.request.AddPublicKeysRequestBody;
+import com.cyanogenmod.account.api.request.GetPublicKeyIdsRequest;
+import com.cyanogenmod.account.api.response.AddPublicKeysResponse;
+import com.cyanogenmod.account.api.response.GetPublicKeyIdsResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -53,6 +57,7 @@ import android.accounts.AccountManagerFuture;
 import android.accounts.AuthenticatorException;
 import android.accounts.OnAccountsUpdateListener;
 import android.accounts.OperationCanceledException;
+import android.app.AppGlobals;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.admin.DevicePolicyManager;
@@ -86,6 +91,8 @@ public class AuthClient {
     private static final String PING_METHOD = "/ping";
     private static final String SECMSG_METHOD = "/secmsg";
     private static final String SEND_CHANNEL_METHOD = "/send_channel";
+    private static final String ADD_PUBLIC_KEYS_METHOD = "/add_public_keys";
+    private static final String GET_PUBLIC_KEY_IDS_METHOD = "/get_public_key_ids";
     private static final String HELP_PATH = "/help";
     private static final String SERVER_URI = getServerURI();
 
@@ -94,6 +101,8 @@ public class AuthClient {
     public static final String PROFILE_AVAILABLE_URI = SERVER_URI + API_ROOT + ACCOUNT_METHOD + AVAILABLE_METHOD;
     public static final String PING_URI = SERVER_URI + API_ROOT + DEVICE_METHOD + PING_METHOD;
     public static final String SEND_CHANNEL_URI = SERVER_URI + API_ROOT + SECMSG_METHOD + SEND_CHANNEL_METHOD;
+    public static final String ADD_PUBLIC_KEYS_URI = SERVER_URI + API_ROOT + DEVICE_METHOD + ADD_PUBLIC_KEYS_METHOD;
+    public static final String GET_PUBLIC_KEY_IDS_URI = SERVER_URI + API_ROOT + DEVICE_METHOD + GET_PUBLIC_KEY_IDS_METHOD;
     public static final String LEARN_MORE_URI = SERVER_URI + HELP_PATH;
     public static final String TOS_URI = "http://www.cyanogenmod.org/docs/terms";
     public static final String PRIVACY_POLICY_URI = "http://www.cyanogenmod.org/docs/privacy";
@@ -113,6 +122,8 @@ public class AuthClient {
     private Request<?> mInFlightTokenRequest;
     private Request<?> mInFlightAuthTokenRequest;
     private Request<?> mInFlightChannelRequest;
+    private Request<?> mInFlightAddPublicKeysRequest;
+    private Request<?> mInFlightGetPublicKeyIdsRequest;
 
     private OnAccountsUpdateListener mAccountsUpdateListener;
 
@@ -243,6 +254,124 @@ public class AuthClient {
                 if (errorListener != null) {
                     errorListener.onErrorResponse(error);
                 }
+            }
+        };
+
+        doTokenRequest(account, callback);
+    }
+
+    public void addPublicKeys(final AddPublicKeysRequestBody requestBody, final Listener<AddPublicKeysResponse> listener, final ErrorListener errorListener) {
+        final Account account = CMAccountUtils.getCMAccountAccount(mContext);
+        if (account == null) {
+            if (CMAccount.DEBUG) Log.d(TAG, "No CMAccount Configured!");
+            return;
+        }
+
+        // Convert the message to JSON
+        final String requestBodyJson = requestBody.toJson(mGson);
+
+        if (CMAccount.DEBUG) Log.d(TAG, "Sending public keys to server, content = " + requestBodyJson);
+        final TokenCallback callback = new TokenCallback() {
+            @Override
+            public void onTokenReceived(String token) {
+                if (mInFlightAddPublicKeysRequest != null) {
+                    mInFlightAddPublicKeysRequest.cancel();
+                    mInFlightAddPublicKeysRequest = null;
+                }
+
+                mInFlightAddPublicKeysRequest = mRequestQueue.add(new AddPublicKeysRequest(token, requestBodyJson,
+                        new Listener<AddPublicKeysResponse>() {
+                            @Override
+                            public void onResponse(AddPublicKeysResponse addPublicKeysResponse) {
+                                mInFlightAddPublicKeysRequest = null;
+                                if (listener != null) {
+                                    listener.onResponse(addPublicKeysResponse);
+                                }
+                            }
+                        },
+                        new ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError volleyError) {
+                                mInFlightChannelRequest = null;
+                                if (volleyError.networkResponse == null) {
+                                    if (CMAccount.DEBUG) Log.d(TAG, "addPublicKeys() onErrorResponse no response");
+                                    volleyError.printStackTrace();
+                                    errorListener.onErrorResponse(volleyError);
+                                    return;
+                                }
+                                int statusCode = volleyError.networkResponse.statusCode;
+                                if (CMAccount.DEBUG) Log.d(TAG, "addPublicKeys onErrorResponse() : " + statusCode);
+                                if (statusCode == 401) {
+                                    expireToken(mAccountManager, account);
+                                    addPublicKeys(requestBody, listener, errorListener);
+                                } else {
+                                    errorListener.onErrorResponse(volleyError);
+                                }
+                            }
+                        }
+                ));
+            }
+
+            @Override
+            public void onError(VolleyError error) {
+                if (errorListener != null) {
+                    errorListener.onErrorResponse(error);
+                }
+            }
+        };
+
+        doTokenRequest(account, callback);
+    }
+
+    public void getPublicKeyIds(final Listener<GetPublicKeyIdsResponse> listener, final ErrorListener errorListener) {
+        final Account account = CMAccountUtils.getCMAccountAccount(mContext);
+        if (account == null) {
+            if (CMAccount.DEBUG) Log.d(TAG, "No CMAccount Configured!");
+            return;
+        }
+
+        final TokenCallback callback = new TokenCallback() {
+            @Override
+            public void onTokenReceived(String token) {
+                if (mInFlightGetPublicKeyIdsRequest != null) {
+                    mInFlightGetPublicKeyIdsRequest.cancel();
+                    mInFlightGetPublicKeyIdsRequest = null;
+                }
+
+                mInFlightGetPublicKeyIdsRequest = mRequestQueue.add(new GetPublicKeyIdsRequest(mContext, token, new Listener<GetPublicKeyIdsResponse>() {
+                    @Override
+                    public void onResponse(GetPublicKeyIdsResponse getPublicKeyIdsResponse) {
+                        mInFlightGetPublicKeyIdsRequest = null;
+                        if (listener != null) {
+                            listener.onResponse(getPublicKeyIdsResponse);
+                        }
+                    }
+                },
+                new ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError volleyError) {
+                        mInFlightGetPublicKeyIdsRequest = null;
+                        if (volleyError.networkResponse == null) {
+                            if (CMAccount.DEBUG) Log.d(TAG, "getPublicKeyIds() onErrorResponse no response");
+                            volleyError.printStackTrace();
+                            errorListener.onErrorResponse(volleyError);
+                        }
+                        int statusCode = volleyError.networkResponse.statusCode;
+                        if (CMAccount.DEBUG) Log.d(TAG, "getPublicKeyIds onErrorResponse() : " + statusCode);
+                        if (statusCode == 401) {
+                            expireToken(mAccountManager, account);
+                            getPublicKeyIds(listener, errorListener);
+                        } else {
+                            errorListener.onErrorResponse(volleyError);
+                        }
+                    }
+                }
+                ));
+            }
+
+            @Override
+            public void onError(VolleyError error) {
+
             }
         };
 
@@ -493,6 +622,10 @@ public class AuthClient {
                 Context.MODE_PRIVATE);
     }
 
+    public SharedPreferences getEncryptionPreferences() {
+        return mContext.getSharedPreferences(CMAccount.ENCRYPTION_PREFERENCES, Context.MODE_PRIVATE);
+    }
+
     public boolean isTokenExpired(AccountManager am, Account account) {
         final String expires_in = am.getUserData(account, CMAccount.AUTHTOKEN_EXPIRES_IN);
         long expiresTime = expires_in == null ? 0 : Long.valueOf(expires_in);
@@ -631,5 +764,4 @@ public class AuthClient {
             return mGson.toJson(sendChannelRequestBody);
         }
     }
-
 }

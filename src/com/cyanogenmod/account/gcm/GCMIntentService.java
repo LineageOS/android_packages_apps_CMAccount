@@ -29,6 +29,7 @@ import com.android.volley.VolleyError;
 import com.cyanogenmod.account.CMAccount;
 import com.cyanogenmod.account.api.request.SendChannelRequestBody;
 import com.cyanogenmod.account.auth.AuthClient;
+import com.cyanogenmod.account.encryption.ECDHKeyService;
 import com.cyanogenmod.account.gcm.model.*;
 import com.cyanogenmod.account.util.CMAccountUtils;
 import com.cyanogenmod.account.util.EncryptionUtils;
@@ -138,6 +139,9 @@ public class GCMIntentService extends IntentService implements Response.Listener
             Log.w(TAG, "Expected PublicKeyMessage, but got " + message.getClass().toString());
             return;
         }
+
+        // One of our public keys was used, create some more.
+        ECDHKeyService.startGenerate(mContext);
 
         // Cast the message to the correct type
         PublicKeyMessage publicKeyMessage = (PublicKeyMessage) message;

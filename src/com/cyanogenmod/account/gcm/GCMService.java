@@ -16,6 +16,7 @@
 
 package com.cyanogenmod.account.gcm;
 
+import com.cyanogenmod.account.encryption.ECDHKeyService;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import com.cyanogenmod.account.CMAccount;

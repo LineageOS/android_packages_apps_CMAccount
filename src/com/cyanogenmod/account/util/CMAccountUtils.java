@@ -56,6 +56,7 @@ public class CMAccountUtils {
 
     private static final String TAG = CMAccountUtils.class.getSimpleName();
     private static final Random sRandom = new Random();
+    private static final Long INTERVAL_WEEK = 604800000L;
 
     public static final Pattern EMAIL_ADDRESS
             = Pattern.compile(
@@ -73,6 +74,7 @@ public class CMAccountUtils {
     private CMAccountUtils(){}
 
     public static void resetBackoff(SharedPreferences prefs) {
+        if (CMAccount.DEBUG) Log.d(TAG, "Resetting backoff");
         setBackoff(prefs, CMAccount.DEFAULT_BACKOFF_MS);
     }
 
@@ -116,6 +118,15 @@ public class CMAccountUtils {
         PendingIntent reRegisterPendingIntent = PendingIntent.getService(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
         AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         am.cancel(reRegisterPendingIntent);
+    }
+
+    public static void scheduleSyncPublicKeys(Context context, Intent intent) {
+        if (CMAccount.DEBUG) Log.d(TAG, "Scheduling public key sync, starting = " +
+                new Timestamp(SystemClock.elapsedRealtime() + INTERVAL_WEEK) + " interval (" + INTERVAL_WEEK + ")");
+        PendingIntent publicKeySyncPendingIntent = PendingIntent.getService(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+        AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + INTERVAL_WEEK, INTERVAL_WEEK,
+                publicKeySyncPendingIntent);
     }
 
     public static Account getCMAccountAccount(Context context) {
