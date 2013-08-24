@@ -16,5 +16,5 @@
 
 package com.cyanogenmod.account.gcm.model;
 
-public abstract class Message {
+public interface Message {
 }

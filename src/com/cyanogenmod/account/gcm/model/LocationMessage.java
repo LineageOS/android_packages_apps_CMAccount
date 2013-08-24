@@ -17,11 +17,7 @@
 package com.cyanogenmod.account.gcm.model;
 
 import android.location.Location;
-import android.util.Log;
-import com.cyanogenmod.account.CMAccount;
-import com.cyanogenmod.account.auth.AuthClient;
-import com.cyanogenmod.account.util.EncryptionUtils;
-import com.google.gson.Gson;
+import com.google.gson.annotations.Expose;
 
 public class LocationMessage extends EncryptedMessage {
     private final String command = "device_location";
