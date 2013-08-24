@@ -18,30 +18,100 @@ package com.cyanogenmod.account.util;
 
 import android.util.Base64;
 import android.util.Log;
-import com.cyanogenmod.account.CMAccount;
+import com.cyanogenmod.account.encryption.ECKeyPair;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
+import org.spongycastle.math.ec.ECPoint;
 
-import javax.crypto.*;
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.Mac;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
-import java.security.*;
+import java.math.BigInteger;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.Key;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
-import java.security.spec.X509EncodedKeySpec;
+import java.util.Arrays;
 
 public class EncryptionUtils {
     private static final String TAG = EncryptionUtils.class.getSimpleName();
 
+    public static class ECDH {
+        private static final BigInteger q = new BigInteger("FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF", 16);
+        private static final BigInteger a = new BigInteger("FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFC", 16);
+        private static final BigInteger b = new BigInteger("5AC635D8AA3A93E7B3EBBD55769886BC651D06B0CC53B0F63BCE3C3E27D2604B", 16);
+        private static final BigInteger n = new BigInteger("FFFFFFFF00000000FFFFFFFFFFFFFFFFBCE6FAADA7179E84F3B9CAC2FC632551", 16);
+
+        private static final ECFieldElement x = new ECFieldElement.Fp(q, new BigInteger("6B17D1F2E12C4247F8BCE6E563A440F277037D812DEB33A0F4A13945D898C296", 16));
+        private static final ECFieldElement y = new ECFieldElement.Fp(q, new BigInteger("4FE342E2FE1A7F9B8EE7EB4A7C0F9E162BCE33576B315ECECBB6406837BF51F5", 16));
+
+        private static final ECCurve curve = new ECCurve.Fp(q, a, b);
+        private static final ECPoint g = new ECPoint.Fp(curve, x, y, true);
+
+        private static BigInteger generatePrivateKey() {
+            // Generate private key.
+            BigInteger n1 = n.subtract(BigInteger.ONE);
+            BigInteger r = new BigInteger(n.bitLength(), new SecureRandom());
+            BigInteger privateKey = r.mod(n1).add(BigInteger.ONE);
+            return privateKey;
+        }
+
+        private static ECPoint generatePublicKey(BigInteger privateKey) {
+            return g.multiply(privateKey);
+        }
+
+        public static ECKeyPair generateKeyPair() {
+            BigInteger privateKey = generatePrivateKey();
+            ECPoint publicKey = generatePublicKey(privateKey);
+            return new ECKeyPair(publicKey, privateKey);
+        }
+
+        public static ECPoint getPublicKey(BigInteger x, BigInteger y) {
+            return curve.createPoint(x, y, false);
+        }
+
+        public static ECPoint getPublicKey(String hexX, String hexY) {
+            BigInteger x = new BigInteger(CMAccountUtils.decodeHex(hexX));
+            BigInteger y = new BigInteger(CMAccountUtils.decodeHex(hexY));
+            return getPublicKey(x, y);
+        }
+
+        public static byte[] calculateSecret(BigInteger privateKey, ECPoint publicKey) {
+            ECPoint.Fp P = new ECPoint.Fp(curve, publicKey.getX(), publicKey.getY());
+            ECPoint S = P.multiply(privateKey);
+            byte[] keyBytes = S.getX().toBigInteger().toByteArray();
+
+            // BigIntegers are stored in two's complement notation.  The first byte determines the sign.
+            // Because of this, there may be a signing byte, giving us a 264bit key, but  we need a 256bit key.
+            // If there is a signing byte, drop it.  Both sides must do this.
+            if (keyBytes.length == 33) {
+                keyBytes = Arrays.copyOfRange(keyBytes, 1, keyBytes.length);
+            }
+
+            return keyBytes;
+        }
+    }
+
     public static class PBKDF2 {
-        public static String getDerivedKey(String password, String salt) {
+        public static byte[] getDerivedKey(String password, String salt) {
             char[] passwordChars = password.toCharArray();
             byte[] saltBytes = Base64.decode(salt, Base64.NO_WRAP);
 
             try {
                 SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
-                KeySpec keySpec = new PBEKeySpec(passwordChars, saltBytes, 1024, 128);
+                KeySpec keySpec = new PBEKeySpec(passwordChars, saltBytes, 1024, 256);
                 SecretKey secretKey = keyFactory.generateSecret(keySpec);
-                return Base64.encodeToString(secretKey.getEncoded(), Base64.NO_WRAP);
+                return secretKey.getEncoded();
             } catch (NoSuchAlgorithmException e) {
                 Log.e(TAG, "NoSuchAlgorithmException", e);
                 throw new AssertionError(e);
@@ -53,13 +123,13 @@ public class EncryptionUtils {
     }
 
     public static class HMAC {
-        public static String getSignature(String key, String message) {
+        public static String getSignature(byte[] key, String message) {
             try {
-                Mac hmac = Mac.getInstance("HmacSHA512");
-                Key secretKey = new SecretKeySpec(key.getBytes(), "HmacSHA512");
+                Mac hmac = Mac.getInstance("HmacSHA256");
+                Key secretKey = new SecretKeySpec(key, "HmacSHA256");
                 hmac.init(secretKey);
                 hmac.update(message.getBytes());
-                return Base64.encodeToString(hmac.doFinal(), Base64.NO_WRAP);
+                return CMAccountUtils.encodeHex(hmac.doFinal());
             } catch (NoSuchAlgorithmException e) {
                 Log.e(TAG, "NoSuchAlgorithmException", e);
                 throw new AssertionError(e);
@@ -71,21 +141,7 @@ public class EncryptionUtils {
     }
 
     public static class AES {
-        public static String generateAesKey() {
-            try {
-                KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
-                SecureRandom secureRandom = new SecureRandom();
-                keyGenerator.init(128, secureRandom);
-                byte[] symmetricKey = keyGenerator.generateKey().getEncoded();
-                return Base64.encodeToString(symmetricKey, Base64.NO_WRAP);
-            } catch (NoSuchAlgorithmException e) {
-                Log.e(TAG, "NoSuchAlgorithimException", e);
-                throw new AssertionError(e);
-            }
-        }
-
-        public static String decrypt(String _ciphertext, String _key, String _initializationVector) {
-            byte[] key = Base64.decode(_key, Base64.DEFAULT);
+        public static String decrypt(String _ciphertext, byte[] key, String _initializationVector) {
             byte[] initializationVector = Base64.decode(_initializationVector, Base64.DEFAULT);
             byte[] ciphertext = Base64.decode(_ciphertext, Base64.DEFAULT);
 
@@ -119,9 +175,7 @@ public class EncryptionUtils {
             }
         }
 
-        public static CipherResult encrypt(String plaintext, String _key) {
-            byte[] key = Base64.decode(_key, Base64.DEFAULT);
-
+        public static CipherResult encrypt(String plaintext, byte[] key) {
             SecretKeySpec keySpec = new SecretKeySpec(key, "AES");
 
             try {
@@ -167,49 +221,6 @@ public class EncryptionUtils {
 
             public String getInitializationVector() {
                 return initializationVector;
-            }
-        }
-    }
-
-    public static class RSA {
-
-        private static PublicKey getPublicKey(String publicKey) {
-            try {
-                if (CMAccount.DEBUG) Log.d(TAG, "Building public key from PEM = " + publicKey.toString());
-                KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-                return keyFactory.generatePublic(new X509EncodedKeySpec(Base64.decode(publicKey.toString(), Base64.DEFAULT)));
-            } catch (NoSuchAlgorithmException e) {
-                Log.e(TAG, "NoSuchAlgorithimException", e);
-                throw new AssertionError(e);
-            } catch (InvalidKeySpecException e) {
-                Log.e(TAG, "InvalidKeySpecException", e);
-                throw new AssertionError(e);
-            }
-        }
-
-        public static String encrypt(String _publicKey, String data) {
-            PublicKey publicKey = getPublicKey(_publicKey);
-
-            try {
-                Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-                cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-                byte[] result = cipher.doFinal(data.getBytes());
-                return Base64.encodeToString(result, Base64.NO_WRAP);
-            } catch (NoSuchAlgorithmException e) {
-                Log.e(TAG, "NoSuchAlgorithimException", e);
-                throw new AssertionError(e);
-            } catch (NoSuchPaddingException e) {
-                Log.e(TAG, "NoSuchPaddingException", e);
-                throw new AssertionError(e);
-            } catch (InvalidKeyException e) {
-                Log.e(TAG, "InvalidKeyException", e);
-                throw new AssertionError(e);
-            } catch (IllegalBlockSizeException e) {
-                Log.e(TAG, "IllegalBlockSizeException", e);
-                throw new AssertionError(e);
-            } catch (BadPaddingException e) {
-                Log.e(TAG, "BadPaddingException");
-                throw new AssertionError(e);
             }
         }
     }

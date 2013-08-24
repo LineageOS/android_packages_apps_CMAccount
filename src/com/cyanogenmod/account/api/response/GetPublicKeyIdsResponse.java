@@ -13,27 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.cyanogenmod.account.api.response;
 
-package com.cyanogenmod.account.gcm.model;
+import java.util.List;
 
-public class PlaintextMessage implements Message {
-    public static final String COMMAND_BEGIN_LOCATE = "begin_locate";
-    public static final String COMMAND_BEGIN_WIPE = "begin_wipe";
-    public static final String COMMAND_KEY_EXCHANGE_FAILED = "key_exchange_failed";
-    public static final String COMMAND_PASSWORD_RESET = "password_reset";
+public class GetPublicKeyIdsResponse {
+    private int statusCode;
+    private List<String> public_key_ids;
 
-    private String command;
-    private int sequence;
-
-    public PlaintextMessage(String command) {
-        this.command = command;
+    public List<String> getPublicKeyIds() {
+        return public_key_ids;
     }
 
-    public String getCommand() {
-        return command;
+    public void setStatusCode(int statusCode) {
+        this.statusCode = statusCode;
     }
 
-    public int getSequence() {
-        return sequence;
+    public int getStatusCode() {
+        return statusCode;
     }
 }

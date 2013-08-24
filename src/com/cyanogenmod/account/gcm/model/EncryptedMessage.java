@@ -16,46 +16,48 @@
 
 package com.cyanogenmod.account.gcm.model;
 
-import android.util.Log;
+import com.cyanogenmod.account.util.CMAccountUtils;
+import com.cyanogenmod.account.util.EncryptionUtils;
 import com.google.gson.Gson;
 import com.google.gson.annotations.Expose;
 
-import static com.cyanogenmod.account.util.EncryptionUtils.AES;
-
-public class EncryptedMessage extends Message {
+public class EncryptedMessage implements Message {
     @Expose
     private String ciphertext;
 
     @Expose
     private String initializationVector;
 
-    public EncryptedMessage() {
-    }
-
-    public EncryptedMessage(String ciphertext, String initializationVector) {
-        this.ciphertext = ciphertext;
-        this.initializationVector = initializationVector;
-    }
+    @Expose
+    private String signature;
 
     public String getCiphertext() {
         return ciphertext;
     }
 
-    public String getIV() {
+    public String getInitializationVector() {
         return initializationVector;
     }
 
     public String toJson() {
-        Gson gson = new Gson();
-        return gson.toJson(this);
+        return new Gson().toJson(this);
+    }
+
+    public String getSignature() {
+        return signature;
     }
 
     public void encrypt(String symmetricKey) {
+        byte[] symmetricKeyBytes = CMAccountUtils.decodeHex(symmetricKey);
         String json = toJson();
 
-        AES.CipherResult result = AES.encrypt(json, symmetricKey);
+        EncryptionUtils.AES.CipherResult result = EncryptionUtils.AES.encrypt(json, symmetricKeyBytes);
         ciphertext = result.getCiphertext();
         initializationVector = result.getInitializationVector();
     }
 
+    public void sign(byte[] hmacSecret) {
+        String signatureBody = ciphertext + ":" + initializationVector;
+        signature = EncryptionUtils.HMAC.getSignature(hmacSecret, signatureBody);
+    }
 }

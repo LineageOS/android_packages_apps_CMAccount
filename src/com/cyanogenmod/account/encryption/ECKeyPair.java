@@ -13,24 +13,39 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.cyanogenmod.account.encryption;
 
-package com.cyanogenmod.account.gcm.model;
-
-import com.cyanogenmod.account.util.EncryptionUtils;
 import org.spongycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;
+import java.util.UUID;
 
-public class PublicKeyMessage {
-    private String x;
-    private String y;
-    private String signature;
+public class ECKeyPair {
+    private ECPoint publicKey;
+    private BigInteger privateKey;
+    private String keyId;
 
-    public ECPoint getPublicKey() {
-        return EncryptionUtils.ECDH.getPublicKey(x, y);
+    public ECKeyPair(ECPoint publicKey, BigInteger privateKey) {
+        this.publicKey = publicKey;
+        this.privateKey = privateKey;
+        this.keyId = UUID.randomUUID().toString();
     }
 
-    public String getSignature() {
-        return signature;
+    public ECKeyPair(ECPoint publicKey, BigInteger privateKey, String keyId) {
+        this.publicKey = publicKey;
+        this.privateKey = privateKey;
+        this.keyId = keyId;
+    }
+
+    public ECPoint getPublicKey() {
+        return publicKey;
+    }
+
+    public BigInteger getPrivateKey() {
+        return privateKey;
+    }
+
+    public String getKeyId() {
+        return keyId;
     }
 }

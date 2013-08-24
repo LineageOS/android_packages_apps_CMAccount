@@ -110,6 +110,10 @@
                 android:name=".api.PingService"
                 android:exported="false" />
 
+        <service
+                android:name=".encryption.ECDHKeyService"
+                android:exported="false" />
+
         <provider
                 android:name=".provider.CMAccountProvider"
                 android:authorities="com.cyanogenmod.account.store"/>
