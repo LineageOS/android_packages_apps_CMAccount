@@ -16,18 +16,10 @@
 
 package com.cyanogenmod.account.gcm.model;
 
-import com.google.gson.annotations.Expose;
+public class AccountMessage {
+    private String email;
 
-public class SymmetricKeyMessage extends Message {
-
-    @Expose
-    private String symmetric_key;
-
-    @Expose
-    private String symmetric_key_verification;
-
-    public SymmetricKeyMessage(String symmetric_key, String symmetric_key_verification) {
-        this.symmetric_key = symmetric_key;
-        this.symmetric_key_verification = symmetric_key_verification;
+    public String getEmail() {
+        return email;
     }
 }

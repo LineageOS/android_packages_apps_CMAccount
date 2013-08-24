@@ -13,10 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.cyanogenmod.account.api.response;
 
-package com.cyanogenmod.account.gcm.model;
+import java.util.List;
 
-public interface Message {
-    public String getKeyId();
-    public String toJson();
+public class GetPublicKeyIdsResponse {
+    private int statusCode;
+    private List<String> public_key_ids;
+
+    public List<String> getPublicKeyIds() {
+        return public_key_ids;
+    }
+
+    public void setStatusCode(int statusCode) {
+        this.statusCode = statusCode;
+    }
+
+    public int getStatusCode() {
+        return statusCode;
+    }
 }
