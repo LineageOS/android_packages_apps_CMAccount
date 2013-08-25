@@ -157,6 +157,24 @@
       "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_cb7cdf22",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-25T02:38:38Z",
+      "side": 1,
+      "message": "Ma compagne est categorique \"fourniE\" \u003d\u003e c\u0027est la carte SIM qui est fournie avec l\u0027appareil. \"fournie\" dans ce cas est un adjectif verbal. D\u0027ailleurs j\u0027aurai plutot vu: \n\n\"Vous devez vous referer aux instructions fournies avec la carte SIM de votre appareil\" \u003c\u003d ce qui d\u0027aileurs est bien mieux puisque l\u0027on parle bien de la carte SIM present dans l\u0027appareil et non celle vendue avec l\u0027appareil comme le sous entend la phrase actuelle. Ce qui dans le cas de l\u0027achat d\u0027un appareil nu ne correspond pas.",
+      "parentUuid": "baee8101_8b0377b8",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
