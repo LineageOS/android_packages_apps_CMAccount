@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_cbf97fca",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-25T01:36:43Z",
+      "side": 1,
+      "message": "Non, infinitif.",
+      "parentUuid": "baee8101_286371b3",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_0858adf9",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 4
@@ -64,6 +82,24 @@
       "writtenOn": "2013-08-24T12:43:11Z",
       "side": 1,
       "message": "fournit \u003d\u003e fournie",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_8b0377b8",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-25T01:36:43Z",
+      "side": 1,
+      "message": "-1",
+      "parentUuid": "baee8101_c872a57c",
       "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
