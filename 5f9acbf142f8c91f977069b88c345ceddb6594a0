@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_0bb427f0",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-25T02:20:01Z",
+      "side": 1,
+      "message": "On privilegie autant que possible l\u0027infinitif",
+      "parentUuid": "baee8101_cbf97fca",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_0858adf9",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 4
@@ -54,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_ebb8c3e7",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-25T02:20:01Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "baee8101_0858adf9",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_e85c49ef",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 4
@@ -65,6 +101,24 @@
       "writtenOn": "2013-08-24T12:43:11Z",
       "side": 1,
       "message": "Parametre \u003d\u003e Parametres",
+      "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_cbce1f83",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-25T02:20:01Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "baee8101_e85c49ef",
       "revId": "5f9acbf142f8c91f977069b88c345ceddb6594a0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
