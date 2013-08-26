@@ -34,6 +34,24 @@
       "revId": "161f4b1bee72d9700482c9e16cc0fa0f2b587918",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_3cddef14",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-26T02:56:37Z",
+      "side": 1,
+      "message": "equivalent L.185:\nhttps://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/android-4.3_r2.2/java/res/values-fr/strings.xml",
+      "parentUuid": "baee8101_fc81a7fc",
+      "revId": "161f4b1bee72d9700482c9e16cc0fa0f2b587918",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
