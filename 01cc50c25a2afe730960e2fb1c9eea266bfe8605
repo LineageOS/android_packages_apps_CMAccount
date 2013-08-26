@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_2999306f",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-08-26T21:29:38Z",
+      "side": 1,
+      "message": "mobile device :)",
+      "revId": "01cc50c25a2afe730960e2fb1c9eea266bfe8605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_099e6c56",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-08-26T21:29:38Z",
+      "side": 1,
+      "message": "\"you\" should be in polite way. :D",
+      "revId": "01cc50c25a2afe730960e2fb1c9eea266bfe8605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e9a3289d",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-08-26T21:29:38Z",
+      "side": 1,
+      "message": "pinpoint maybe this is better? http://pastebin.com/3gKjTrA5",
+      "revId": "01cc50c25a2afe730960e2fb1c9eea266bfe8605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_49947436",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-08-26T21:29:38Z",
+      "side": 1,
+      "message": "https://github.com/CyanogenMod/android_packages_apps_Settings/blob/cm-10.2/res/values-zh-rTW/strings.xml\nname\u003d\"location_neighborhood_level\"  :)",
+      "revId": "01cc50c25a2afe730960e2fb1c9eea266bfe8605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
