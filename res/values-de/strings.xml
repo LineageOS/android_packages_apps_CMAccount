@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources>
+    <string name="app_name">CyanogenMod-Konto</string>
+    <string name="product_name">cyanogenmod</string>
+
+    <string name="next">Weiter</string>
+    <string name="continue_label">Fortsetzen</string>
+    <string name="prev">Zurück</string>
+    <string name="skip">überspringen</string>
+    <string name="finish">Fertig</string>
+    <string name="bacon">Speck!</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="create">Erstellen</string>
+    <string name="login">Anmelden</string>
+    <string name="ok">Okay</string>
+    <string name="existing">In vorhandenes Konto anmelden</string>
+    <string name="new_account">Neues Konto erstellen</string>
+    <string name="skip_anyway">Trotzdem überspringen</string>
+    <string name="dont_skip">Nicht überspringen</string>
+
+    <string name="setup_complete">Einrichtung abgeschlossen</string>
+    <string name="setup_complete_summary">Glückwunsch! Ihr Gerät ist nun vollständig eingerichtet.</string>
+    <string name="setup_welcome">Willkommen bei CyanogenMod</string>
+    <string name="setup_welcome_summary">Um die Einrichtung fortzusetzen, wählen Sie bitte eine Sprache aus.</string>
+    <string name="setup_cmaccount">Richten Sie ihr CyanogenMod-Konto ein</string>
+    <string name="setup_sim_missing">Setzen Sie eine SIM-Karte ein</string>
+    <string name="setup_google_account">Google-Konto</string>
+    <string name="setup_location">Standort Einstellungen</string>
+    <string name="setup_datetime">Datum &amp; Uhrzeit Einstellungen</string>
+    <string name="setup_current_date">Aktuelles Datum</string>
+    <string name="setup_current_time">Aktuelle Uhrzeit</string>
+    <string name="setup_msg_no_network">WARNUNG: Sie werden nicht im Stande sein, die Konten erfolgreich einzurichten</string>
+
+    <string name="cmaccount_setup_create_title">Erstellen eines CyanogenMod-Kontos</string>
+    <string name="cmaccount_setup_login_title">Anmelden in Ihr CyanogenMod-Konto</string>
+    <string name="cmaccount_setup_email_label">E-Mail</string>
+    <string name="cmaccount_setup_email_unavailable_label">E-Mail ist bereits registriert</string>
+    <string name="cmaccount_setup_email_invalid_label">Das ist keine gültige E-Mail Adresse</string>
+    <string name="cmaccount_setup_password_label">Passwort</string>
+    <string name="cmaccount_setup_password_create_label">Passwort (mind. 8 Zeichen)</string>
+    <string name="cmaccount_setup_password_mismatch_label">Passwörter stimmen nicht überein!</string>
+    <string name="cmaccount_setup_password_invalid_label">Passwort muss mindestens 8 Zeichen haben!</string>
+    <string name="cmaccount_setup_confirm_password_label">Passwort wiederholen</string>
+    <string name="cmaccount_setup_tos_label">Ich akzeptiere die %1$sNutzungsbedinungen%2$s</string>
+    <string name="cmaccount_add_title">Fügen Sie ein CyanogenMod-Konto hinzu</string>
+    <string name="cmaccount_add_create_label">Ein CyanogenMod-Konto bietet Ihnen Zugriff auf erweiterte Funktionen für Ihre mobilen Geräte mit CyanogenMod.</string>
+    <string name="cmaccount_learn_more">Erfahre mehr...</string>
+
+    <string name="cmaccount_password_changed_title">Passwort geändert</string>
+    <string name="cmaccount_password_changed_message">Bitte melden Sie sich mit Ihrem CyanogenMod-Konto an</string>
+
+    <string name="cmaccount_login_message">Anmeldung bei CyanogenMod</string>
+    <string name="cmaccount_creating_profile_message">Erstellen Sie sich ein CyanogenMod-Profil</string>
+
+    <string name="cmaccount_login_error_title">Anmeldung fehlgeschlagen</string>
+    <string name="cmaccount_login_error_message">Falsche E-Mail oder Passwort.</string>
+    <string name="cmaccount_server_error_title">Serverfehler</string>
+    <string name="cmaccount_create_account_error_title">Fehler beim Erstellen eines Kontos</string>
+    <string name="cmaccount_server_error_message">Es trat ein Fehler bei der Kommunikation mit dem Server auf. Bitte probieren Sie es später erneut.</string>
+
+    <string name="cmaccount_error_multiple_accounts">Nur ein CyanogenMod-Konto ist auf einem Gerät erlaubt</string>
+
+    <string name="sim_missing_summary">Sie müssen sich auf die Anleitung der SIM-Karte beziehen, was normalerweise mit Ihrem Gerät mitgeliefert wurde.</string>
+    <string name="google_account_summary">Möchten Sie nun ein Google Konto einrichten?</string>
+    <string name="btn_google_account">Google-Konto einrichten</string>
+
+    <string name="location_access_title">Zugriff zu Ihrem Standort</string>
+    <string name="location_access_summary">Genehmige Apps, die nach der Berechtigung gefragt haben, Ihre Standortinformationen zu verwenden</string>
+    <string name="location_sources_heading">Standort Quellen</string>
+    <string name="location_gps">GPS Satelliten</string>
+    <string name="location_street_level" product="tablet">Genehmige Apps auf Ihrem Tablet GPS für eine genauere Ortung zu verwenden</string>
+    <string name="location_street_level" product="default">Genehmige Apps auf Ihrem Handy GPS für eine genauere Ortung zu verwenden</string>
+    <string name="location_network_based">W-LAN &amp; mobiler Netzwerkstandort</string>
+    <string name="location_neighborhood_level">Genehmige Apps Google\'s Standortservice zu verwenden, um Ihren Standort schneller zu ermitteln. Anonyme standortbezogene Daten werden hierbei gesammelt und an Google übermittelt.</string>
+</resources>
