@@ -16,6 +16,24 @@
       "revId": "161f4b1bee72d9700482c9e16cc0fa0f2b587918",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_fc81a7fc",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-08-26T02:21:37Z",
+      "side": 1,
+      "message": "Oui, on donne pas une felicitation.",
+      "parentUuid": "baee8101_96acbaee",
+      "revId": "161f4b1bee72d9700482c9e16cc0fa0f2b587918",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
