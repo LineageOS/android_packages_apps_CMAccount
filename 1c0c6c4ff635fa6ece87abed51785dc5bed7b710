@@ -124,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_cf4e3d96",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T23:43:46Z",
+      "side": 1,
+      "message": "Wuerde alternativ auch zu \"Abbrechen\" tendieren. Wobei \"Zurueck\" hierbei dennoch besser klingt.",
+      "parentUuid": "9af37de9_6f02b140",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_8f7275ac",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -527,6 +545,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_2f2f09a3",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T23:43:46Z",
+      "side": 1,
+      "message": "Ich denke, dass das Geschmackssache ist. Persoenlich wuerde ich Markus seine Formulierung bevorzugen.\n\nFinde \"Geraete, auf denen CyanogenMod laeuft\" mehr ausformuliert und auf den ersten Blick verstaendlicher.\n\n\"Ein CyanogenMod-Konto bietet Ihnen Zugriff auf erweiterte Funktionen fuer Ihre mobilen CyanogenMod-Geraete.\"\n\n...vs...\n\n\"Ein CyanogenMod-Konto bietet Ihnen Zugriff auf erweiterte Funktionen fuer Ihre mobilen Geraete, auf denen CyanogenMod installiert ist.\"",
+      "parentUuid": "9af37de9_6f8991ca",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_0fb6853d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -561,6 +597,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_8f483589",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T23:43:46Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_af7bf97a",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_8f803548",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -572,6 +626,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "\u0027Anmeldung bei CyanogenMod erfolgt\\u2026\u0027? Es ist ja ein \u0027Bitte warten\u0027-Dialog.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4f5b6d55",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T23:43:46Z",
+      "side": 1,
+      "message": "Vorschlag: \"Anmeldung laeuft\\u2026\" - Kurz \u0026 knackig",
+      "parentUuid": "9af37de9_8f803548",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -834,6 +906,24 @@
       "side": 1,
       "message": "Da das einer der Strings ist, der 1:1 aus der Settings-App kopiert ist (Einstellungen -\u003e Standortzugriff), wuerde ich das genau so lassen, wie es dort auftaucht. Ansonsten wird es inkonsistent.",
       "parentUuid": "9af37de9_8fd5d5ba",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6f0cf142",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T23:43:46Z",
+      "side": 1,
+      "message": "Okay.",
+      "parentUuid": "9af37de9_0f90c5eb",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
