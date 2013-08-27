@@ -16,12 +16,18 @@
 
 package com.cyanogenmod.account.gcm.model;
 
-public class PublicKeyMessage extends Message {
-    private String public_key;
+import com.cyanogenmod.account.util.EncryptionUtils;
+import org.spongycastle.math.ec.ECPoint;
+
+import java.math.BigInteger;
+
+public class PublicKeyMessage {
+    private String x;
+    private String y;
     private String signature;
 
-    public String getPublicKey() {
-        return public_key;
+    public ECPoint getPublicKey() {
+        return EncryptionUtils.ECDH.getPublicKey(x, y);
     }
 
     public String getSignature() {

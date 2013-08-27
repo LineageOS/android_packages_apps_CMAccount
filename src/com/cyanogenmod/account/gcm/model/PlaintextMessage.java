@@ -16,26 +16,17 @@
 
 package com.cyanogenmod.account.gcm.model;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+public class PlaintextMessage implements Message {
+    public static final String COMMAND_BEGIN_LOCATE = "begin_locate";
+    public static final String COMMAND_BEGIN_WIPE = "begin_wipe";
+    public static final String COMMAND_KEY_EXCHANGE_FAILED = "key_exchange_failed";
+    public static final String COMMAND_PASSWORD_RESET = "password_reset";
 
-public class PlaintextMessage extends Message {
     private String command;
     private int sequence;
 
-    public PlaintextMessage(String command, int sequence) {
+    public PlaintextMessage(String command) {
         this.command = command;
-        this.sequence = sequence;
-    }
-
-    public static PlaintextMessage fromJson(String json) {
-        Gson gson = new GsonBuilder().create();
-        return gson.fromJson(json, PlaintextMessage.class);
-    }
-
-    public String toJson() {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        return gson.toJson(this);
     }
 
     public String getCommand() {

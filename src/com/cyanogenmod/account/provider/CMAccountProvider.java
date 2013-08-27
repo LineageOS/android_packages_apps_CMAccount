@@ -39,7 +39,7 @@ public class CMAccountProvider extends ContentProvider {
     public static final String AUTHORITY = "com.cyanogenmod.account.store";
     private static final String SYMMETRIC_KEY_PATH = "symmetric_key";
     private static final String ECDH_KEY_PATH = "ecdh_key";
-    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY).buildUpon().appendPath(SYMMETRIC_KEY_PATH).build();
+    public static final Uri SYMMETRIC_KEY_CONTENT_URI = Uri.parse("content://" + AUTHORITY).buildUpon().appendPath(SYMMETRIC_KEY_PATH).build();
     public static final Uri ECDH_CONTENT_URI = Uri.parse("content://" + AUTHORITY).buildUpon().appendPath(ECDH_KEY_PATH).build();
 
     private static final String TABLE_SYMMETRIC_KEYS = "symmetric_keys";
@@ -62,11 +62,11 @@ public class CMAccountProvider extends ContentProvider {
 
         sSymmetricKeyProjectionMap = new HashMap<String, String>();
         sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns._ID, SymmetricKeyStoreColumns._ID);
+        sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.KEY_ID, SymmetricKeyStoreColumns.KEY_ID);
         sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.KEY, SymmetricKeyStoreColumns.KEY);
         sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.LOCAL_SEQUENCE, SymmetricKeyStoreColumns.LOCAL_SEQUENCE);
         sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.REMOTE_SEQUENCE, SymmetricKeyStoreColumns.REMOTE_SEQUENCE);
         sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.EXPIRATION, SymmetricKeyStoreColumns.EXPIRATION);
-        sSymmetricKeyProjectionMap.put(SymmetricKeyStoreColumns.SESSION_ID, SymmetricKeyStoreColumns.SESSION_ID);
 
         sECDHKeyProjectionMap = new HashMap<String, String>();
         sECDHKeyProjectionMap.put(ECDHKeyStoreColumns._ID, ECDHKeyStoreColumns._ID);
@@ -211,10 +211,10 @@ public class CMAccountProvider extends ContentProvider {
         }
     }
 
-    public static void incrementSequence(Context context, String column, String sessionId) {
+    public static void incrementSequence(Context context, String column, String keyId) {
         SQLiteOpenHelper openHelper = new DatabaseHelper(context.getApplicationContext());
         SQLiteDatabase db = openHelper.getWritableDatabase();
-        db.execSQL("UPDATE " + TABLE_SYMMETRIC_KEYS + " SET " + column + " = " + column + " + 1 WHERE " + SymmetricKeyStoreColumns.SESSION_ID + " = ?;", new String[]{ sessionId });
+        db.execSQL("UPDATE " + TABLE_SYMMETRIC_KEYS + " SET " + column + " = " + column + " + 1 WHERE " + SymmetricKeyStoreColumns.KEY_ID + " = ?;", new String[]{ keyId });
         openHelper.close();
     }
 
@@ -241,9 +241,9 @@ public class CMAccountProvider extends ContentProvider {
                     + SymmetricKeyStoreColumns._ID + " INTEGER PRIMARY KEY, "
                     + SymmetricKeyStoreColumns.KEY + " TEXT NOT NULL, "
                     + SymmetricKeyStoreColumns.LOCAL_SEQUENCE + " INTEGER NOT NULL DEFAULT 0, "
-                    + SymmetricKeyStoreColumns.REMOTE_SEQUENCE + " INTEGER NOT NULL DEFAULT 0, "
+                    + SymmetricKeyStoreColumns.REMOTE_SEQUENCE + " INTEGER NOT NULL DEFAULT 1, "
                     + SymmetricKeyStoreColumns.EXPIRATION + " DATETIME DEFAULT 0, "
-                    + SymmetricKeyStoreColumns.SESSION_ID + " TEXT NOT NULL UNIQUE);");
+                    + SymmetricKeyStoreColumns.KEY_ID + " TEXT NOT NULL UNIQUE);");
 
             db.execSQL("create trigger update_expiration after insert on " + TABLE_SYMMETRIC_KEYS +
                     " begin update " + TABLE_SYMMETRIC_KEYS + " set " + SymmetricKeyStoreColumns.EXPIRATION +
@@ -270,9 +270,9 @@ public class CMAccountProvider extends ContentProvider {
 
     public static interface SymmetricKeyStoreColumns {
         public static final String _ID = "_id";
+        public static final String KEY_ID = "key_id";
         public static final String KEY = "symmetric_key";
         public static final String EXPIRATION = "expiration";
-        public static final String SESSION_ID = "session_id";
         public static final String LOCAL_SEQUENCE = "local_sequence";
         public static final String REMOTE_SEQUENCE = "remote_sequence";
         public static final String CONTENT_TYPE = "vnd.cyanogenmod.cursor.dir/symmetricKey";

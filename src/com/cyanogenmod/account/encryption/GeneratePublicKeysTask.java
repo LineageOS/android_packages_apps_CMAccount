@@ -31,7 +31,6 @@ import com.cyanogenmod.account.util.CMAccountUtils;
 import com.cyanogenmod.account.util.EncryptionUtils;
 import org.spongycastle.math.ec.ECPoint;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,13 +95,13 @@ public class GeneratePublicKeysTask implements Response.ErrorListener, Response.
     }
 
     private void storeKeyPair(ECKeyPair keyPair) {
-        BigInteger privateKey = keyPair.getPrivateKey();
+        String privateKey = CMAccountUtils.encodeHex(keyPair.getPrivateKey());
         ECPoint publicKey = keyPair.getPublicKey();
 
         ContentValues values = new ContentValues();
         values.put(CMAccountProvider.ECDHKeyStoreColumns.PRIVATE, privateKey.toString());
-        values.put(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_X, publicKey.getX().toBigInteger().toString());
-        values.put(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_Y, publicKey.getY().toBigInteger().toString());
+        values.put(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_X, CMAccountUtils.encodeHex(publicKey.getX()));
+        values.put(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_Y, CMAccountUtils.encodeHex(publicKey.getY()));
         values.put(CMAccountProvider.ECDHKeyStoreColumns.KEY_ID, keyPair.getKeyId());
         mContext.getContentResolver().insert(CMAccountProvider.ECDH_CONTENT_URI, values);
     }
@@ -113,8 +112,8 @@ public class GeneratePublicKeysTask implements Response.ErrorListener, Response.
         String[] selectionArgs = new String[] {"0"};
         Cursor cursor = mContext.getContentResolver().query(CMAccountProvider.ECDH_CONTENT_URI, null, selection, selectionArgs, null);
         while (cursor.moveToNext()) {
-            BigInteger x = new BigInteger(cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_X)));
-            BigInteger y = new BigInteger(cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_Y)));
+            String x = cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_X));
+            String y = cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC_Y));
             String keyId = cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.KEY_ID));
 
             ECPoint publicKey = EncryptionUtils.ECDH.getPublicKey(x, y);

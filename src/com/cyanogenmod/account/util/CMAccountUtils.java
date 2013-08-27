@@ -40,7 +40,11 @@ import android.os.SystemProperties;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.codec.binary.Hex;
+import org.spongycastle.math.ec.ECFieldElement;
 
+import java.math.BigInteger;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.security.MessageDigest;
@@ -269,6 +273,33 @@ public class CMAccountUtils {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(CMAccount.DEVICE_SALT, salt);
         editor.commit();
+    }
 
+    public static String encodeHex(byte[] bytes) {
+        return new String(Hex.encodeHex(bytes));
+    }
+
+    public static String encodeHex(ECFieldElement fieldElement) {
+        return encodeHex(fieldElement.toBigInteger().toByteArray());
+    }
+
+    public static String encodeHex(BigInteger integer) {
+        return encodeHex(integer.toByteArray());
+    }
+
+    public static byte[] decodeHex(String hex) {
+        try {
+            return Hex.decodeHex(hex.toCharArray());
+        } catch (DecoderException e) {
+            Log.e(TAG, "Unable to decode hex string", e);
+            throw new AssertionError(e);
+        }
+    }
+
+    public static byte[] getHmacSecret(Context context) {
+        AccountManager accountManager = (AccountManager) context.getSystemService(Context.ACCOUNT_SERVICE);
+        String passwordHash = accountManager.getPassword(getCMAccountAccount(context));
+        String deviceSalt = CMAccountUtils.getDeviceSalt(context);
+        return EncryptionUtils.PBKDF2.getDerivedKey(passwordHash, deviceSalt);
     }
 }

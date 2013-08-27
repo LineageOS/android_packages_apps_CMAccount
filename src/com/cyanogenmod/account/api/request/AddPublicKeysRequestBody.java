@@ -50,8 +50,8 @@ public class AddPublicKeysRequestBody {
         private String key_id;
 
         public KeyPair(ECPoint publicKey, String key_id) {
-            this.x = publicKey.getX().toBigInteger().toString();
-            this.y = publicKey.getY().toBigInteger().toString();
+            this.x = CMAccountUtils.encodeHex(publicKey.getX().toBigInteger().toByteArray());
+            this.y = CMAccountUtils.encodeHex(publicKey.getY().toBigInteger().toByteArray());
             this.key_id = key_id;
         }
     }

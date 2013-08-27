@@ -16,40 +16,6 @@
 
 package com.cyanogenmod.account.auth;
 
-import com.cyanogenmod.account.api.request.AddPublicKeysRequest;
-import com.cyanogenmod.account.api.request.AddPublicKeysRequestBody;
-import com.cyanogenmod.account.api.request.GetPublicKeyIdsRequest;
-import com.cyanogenmod.account.api.response.AddPublicKeysResponse;
-import com.cyanogenmod.account.api.response.GetPublicKeyIdsResponse;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response.ErrorListener;
-import com.android.volley.Response.Listener;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.RequestFuture;
-import com.android.volley.toolbox.Volley;
-import com.cyanogenmod.account.CMAccount;
-import com.cyanogenmod.account.R;
-import com.cyanogenmod.account.api.AuthTokenRequest;
-import com.cyanogenmod.account.api.AuthTokenResponse;
-import com.cyanogenmod.account.api.CreateProfileRequest;
-import com.cyanogenmod.account.api.CreateProfileResponse;
-import com.cyanogenmod.account.api.PingRequest;
-import com.cyanogenmod.account.api.PingResponse;
-import com.cyanogenmod.account.api.PingService;
-import com.cyanogenmod.account.api.ProfileAvailableRequest;
-import com.cyanogenmod.account.api.ProfileAvailableResponse;
-import com.cyanogenmod.account.api.SendChannelRequest;
-import com.cyanogenmod.account.api.request.SendChannelRequestBody;
-import com.cyanogenmod.account.gcm.GCMUtil;
-import com.cyanogenmod.account.gcm.model.PlaintextMessage;
-import com.cyanogenmod.account.gcm.model.WipeStartedMessage;
-import com.cyanogenmod.account.provider.CMAccountProvider;
-import com.cyanogenmod.account.util.CMAccountUtils;
-
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;
@@ -75,6 +41,37 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response.ErrorListener;
+import com.android.volley.Response.Listener;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.RequestFuture;
+import com.android.volley.toolbox.Volley;
+import com.cyanogenmod.account.CMAccount;
+import com.cyanogenmod.account.R;
+import com.cyanogenmod.account.api.AuthTokenRequest;
+import com.cyanogenmod.account.api.AuthTokenResponse;
+import com.cyanogenmod.account.api.CreateProfileRequest;
+import com.cyanogenmod.account.api.CreateProfileResponse;
+import com.cyanogenmod.account.api.PingRequest;
+import com.cyanogenmod.account.api.PingResponse;
+import com.cyanogenmod.account.api.PingService;
+import com.cyanogenmod.account.api.ProfileAvailableRequest;
+import com.cyanogenmod.account.api.ProfileAvailableResponse;
+import com.cyanogenmod.account.api.SendChannelRequest;
+import com.cyanogenmod.account.api.request.AddPublicKeysRequest;
+import com.cyanogenmod.account.api.request.AddPublicKeysRequestBody;
+import com.cyanogenmod.account.api.request.GetPublicKeyIdsRequest;
+import com.cyanogenmod.account.api.request.SendChannelRequestBody;
+import com.cyanogenmod.account.api.response.AddPublicKeysResponse;
+import com.cyanogenmod.account.api.response.GetPublicKeyIdsResponse;
+import com.cyanogenmod.account.gcm.GCMUtil;
+import com.cyanogenmod.account.gcm.model.WipeStartedMessage;
+import com.cyanogenmod.account.provider.CMAccountProvider;
+import com.cyanogenmod.account.util.CMAccountUtils;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
@@ -386,12 +383,12 @@ public class AuthClient {
         }
 
         // Since we are sending a message, bump the remote sequence.
-        if (sendChannelRequestBody.getSessionId() != null) {
-            incrementSessionRemoteSequence(sendChannelRequestBody.getSessionId());
+        if (sendChannelRequestBody.getKeyId() != null) {
+            incrementSessionRemoteSequence(sendChannelRequestBody.getKeyId());
         }
 
-        // Convert the message to JSON using the appropriate Gson instance
-        final String sendChannelRequestBodyJson = convertSendChannelRequestBodyToJson(sendChannelRequestBody);
+        // Convert the message to JSON using the appropriate Gson instance.
+        final String sendChannelRequestBodyJson = sendChannelRequestBody.toJson(mExcludingGson, mGson);
 
         if (CMAccount.DEBUG) Log.d(TAG, "Sending secure message, plaintext content = " + sendChannelRequestBody.toJsonPlaintext());
 
@@ -581,14 +578,14 @@ public class AuthClient {
         return !skipWipe;
     }
 
-    public void destroyDevice(Context context, String sessionId) {
+    public void destroyDevice(Context context, String keyId) {
         final PowerManager pm = (PowerManager)context.getSystemService(Context.POWER_SERVICE);
         final PowerManager.WakeLock wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG);
         wakeLock.acquire(1000 * 60);
         final DevicePolicyManager dpm = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
 
         // Send a message back to the browser to indicate that the wipe has started.
-        final SendChannelRequestBody sendChannelRequestBody = new SendChannelRequestBody(new WipeStartedMessage(), this, sessionId);
+        final SendChannelRequestBody sendChannelRequestBody = new SendChannelRequestBody(mContext, new WipeStartedMessage(), keyId);
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -678,35 +675,20 @@ public class AuthClient {
         }, mHandler);
     }
 
-    public void storeSymmetricKey(String symmetricKey, String sessionId) {
-        // TODO: keys should expire
-        if (CMAccount.DEBUG) Log.d(TAG, "Storing symmetricKey:" + symmetricKey +" for sessionId:" + sessionId);
-
-        ContentValues values = new ContentValues();
-        values.put(CMAccountProvider.SymmetricKeyStoreColumns.KEY, symmetricKey);
-        values.put(CMAccountProvider.SymmetricKeyStoreColumns.SESSION_ID, sessionId);
-        mContext.getContentResolver().insert(CMAccountProvider.CONTENT_URI, values);
+    public void incrementSessionRemoteSequence(String keyId) {
+        if (CMAccount.DEBUG) Log.d(TAG, "Incrementing remote sequence for keyId:" + keyId);
+        CMAccountProvider.incrementSequence(mContext, CMAccountProvider.SymmetricKeyStoreColumns.REMOTE_SEQUENCE, keyId);
     }
 
-    public void incrementSessionRemoteSequence(String sessionId) {
-        if (CMAccount.DEBUG) Log.d(TAG, "Incrementing remote sequence for sessionId:" + sessionId);
-        CMAccountProvider.incrementSequence(mContext, CMAccountProvider.SymmetricKeyStoreColumns.REMOTE_SEQUENCE, sessionId);
-    }
-
-    public void incrementSessionLocalSequence(String sessionId) {
-        if (CMAccount.DEBUG) Log.d(TAG, "Incrementing local sequence for sessionId:" + sessionId);
-        CMAccountProvider.incrementSequence(mContext, CMAccountProvider.SymmetricKeyStoreColumns.LOCAL_SEQUENCE, sessionId);
-    }
-
-    public SymmetricKeySequencePair getSymmetricKey(String sessionId) {
-        if (CMAccount.DEBUG) Log.d(TAG, "Loading symmetric key for sessionId:" + sessionId);
-        // TODO: keys should expire
-        if (sessionId == null) {
+    public SymmetricKeySequencePair getSymmetricKey(String keyId) {
+        if (CMAccount.DEBUG) Log.d(TAG, "Loading symmetric key for keyId:" + keyId);
+        // TODO(ctso): keys should expire
+        if (keyId == null) {
             return null;
         }
         Cursor c = null;
         try {
-            c = mContext.getContentResolver().query(CMAccountProvider.CONTENT_URI, null, CMAccountProvider.SymmetricKeyStoreColumns.SESSION_ID + " = ?", new String[]{sessionId}, null);
+            c = mContext.getContentResolver().query(CMAccountProvider.SYMMETRIC_KEY_CONTENT_URI, null, CMAccountProvider.SymmetricKeyStoreColumns.KEY_ID + " = ?", new String[]{keyId}, null);
             if (c != null && c.getCount() > 0) {
                 c.moveToFirst();
                 String symmetricKey = c.getString(c.getColumnIndex(CMAccountProvider.SymmetricKeyStoreColumns.KEY));
@@ -720,7 +702,7 @@ public class AuthClient {
             }
         }
 
-        Log.w(TAG, "Unable to load symmetric key from database for sessionId:" + sessionId);
+        Log.w(TAG, "Unable to load symmetric key from database for keyId:" + keyId);
         return null;
     }
 
@@ -754,14 +736,6 @@ public class AuthClient {
 
         public int getRemoteSequence() {
             return remoteSequence;
-        }
-    }
-
-    private String convertSendChannelRequestBodyToJson(SendChannelRequestBody sendChannelRequestBody) {
-        if (!(sendChannelRequestBody.getMessage() instanceof PlaintextMessage)) {
-            return mExcludingGson.toJson(sendChannelRequestBody);
-        } else {
-            return mGson.toJson(sendChannelRequestBody);
         }
     }
 }
