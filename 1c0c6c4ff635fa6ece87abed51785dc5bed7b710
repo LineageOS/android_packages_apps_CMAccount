@@ -1,0 +1,531 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9af37de9_0f48c55a",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Ueberspringen (mit grossem Ue)",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_ef7341b3",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Die Settings-App benutzt an dieser Stelle \u0027Fertigstellen\u0027",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4f65addf",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027Bestehendes Konto verwenden\u0027?",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_af6d39ce",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Don\u0027t skip !\u003d Dennoch ueberspringen\n\nIch wuerde das eher etwas frei mit \u0027Zurueck\u0027 uebersetzen.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8f7275ac",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "setup_cmaccount und setup_google_account werden im gleichen Kontext verwendet und sollten daher gleich aufgebaut sein. Also entweder:\n\n- \u0027CyanogenMod-Konto\u0027 und \u0027Google-Konto\u0027 oder\n- \u0027CyanogenMod-Konto einrichten\u0027 und \u0027Google-Konto einrichten\u0027",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6f6871bb",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027das Konto\u0027 oder \u0027Ihr Konto\u0027 an Stelle von \u0027die Konten\u0027 ... man kann ja nur eins einrichten",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_ef9a21c5",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027An CyanogenMod-Konto anmelden\u0027?",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_2f6269d9",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Im Kontext wuerde ich eher \u0027E-Mail-Adresse\u0027 schreiben",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_cf9f5db3",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "E-Mail-Adresse",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_afa41908",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Die E-Mail-Adresse oder das Passwort sind ungueltig",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8fa955e2",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Die eingegebenen Passwoerter stimmen nicht ueberein.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6faf51e4",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Das Passwort muss aus mindestens 8 Zeichen bestehen.\n\n(ich wuerde auf die Ausrufezeichen verzichten, das klingt so aggresiv)",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4fac8ded",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "CyanogenMod-Konto hinzufuegen\n\n(wie bei Google)",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_ef81014f",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027...mobilen CyanogenMod-Geraete\u0027?",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0fb6853d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Weitere Informationen\\u2026\n\n(Settings- und Phone-App verwenden das so)",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_af7bf97a",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027Bitte melden Sie sich erneut an\u0027?",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8f803548",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "\u0027Anmeldung bei CyanogenMod erfolgt\\u2026\u0027? Es ist ja ein \u0027Bitte warten\u0027-Dialog.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0f5fa50f",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Creating !\u003d Erstellen Sie sich ;)\n\n\u0027Das CyanogenMod-Profil wird angelegt\\u2026\u0027",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6f963196",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Die E-Mail-Adresse oder das Passwort sind nicht korrekt.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_2f902995",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "des Kontos",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0f8d657b",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "probieren -\u003e versuchen",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_cfed1d27",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Es kann nur ein CyanogenMod-Konto pro Geraet eingerichtet werden",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_aff2d904",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Etwas freierer Vorschlag:\n\nHinweise zum Einsetzen der SIM-Karte erhalten Sie in der Bedienungsanleitung Ihres Geraetes\n\n(Umlaut aber bitte richtig schreiben ;) )",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8ff715f5",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Zugriff auf meinen Standort (wie in Settings-App - dieser und die naechsten Strings sind 1:1 aus der Settings-App kopiert)",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4fda4d7a",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Meine Standortdaten duerfen von Apps verwendet werden, die ich dazu berechtigt habe.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_2fe70942",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Standortquellen",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0fe44539",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "GPS-Satelliten",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_efcfc1b1",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Apps duerfen meinen Standort mithilfe von GPS auf meinem Tablet bestimmen.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_cfd4fd48",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Apps duerfen meinen Standort mithilfe von GPS auf meinem Telefon bestimmen",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_afc9b9ae",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "WLAN- \u0026amp; Mobilfunknetz-Standort",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6fc4f191",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T19:13:52Z",
+      "side": 1,
+      "message": "Apps duerfen meinen Standort mit dem Google-Standortdienst schneller bestimmen. Anonyme Standortdaten werden erfasst und an Google gesendet.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
