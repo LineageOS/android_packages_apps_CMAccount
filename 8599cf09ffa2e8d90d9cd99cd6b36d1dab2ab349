@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_ec72167c",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6563
+      },
+      "writtenOn": "2013-08-27T05:34:38Z",
+      "side": 1,
+      "message": "The string is contained here in the app:\n./setup/FinishPage.java:        return R.string.bacon;\n\nYou should consider removing your comment",
+      "revId": "8599cf09ffa2e8d90d9cd99cd6b36d1dab2ab349",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
