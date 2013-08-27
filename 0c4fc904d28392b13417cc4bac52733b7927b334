@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9af37de9_8f7155e3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T23:19:12Z",
+      "side": 1,
+      "message": "Not sure whether this string is needed in lower case or whether it would be acceptable to be displayed in upper case in the activity title. If that was the case, we can get away with a single string instead of two.",
+      "revId": "0c4fc904d28392b13417cc4bac52733b7927b334",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
