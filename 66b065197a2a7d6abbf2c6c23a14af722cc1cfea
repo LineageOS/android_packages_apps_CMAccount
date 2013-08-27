@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_4cf36274",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Ic finde \"An/mit vorhandenem Konto anmelden\" schoener. Kann man sich wirklich in ein Konto anmelden?",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_ec02163e",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "evtl Einrichten abgeschlossen. Einrichtung klingt so nach Moebeln. :-)",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_acfc0e3f",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "s.o,",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_8cf94a50",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Bindestrich fehlt.",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_6c9506e3",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Bindestrich fehlt.",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_4c9a4216",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "evlt. (Ein) CyanogenMod-Konto anlegen/erstellen",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_2c9ffe04",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "E-Mail-Adresse",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_0ca43a55",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "evtl. Bei der Kommunikation mit dem Server ist ein Problem aufgetreten.",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_cc8632b9",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Es ist nur ein CyanogenMod-Konto pro Geraet erlaubt.",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_4cc122e4",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Bitte halten Sie sich an die mit Ihrem Geraet mitgelieferte SIM-Karten-Anleitung.",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_ac93eef9",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Google-Konto",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_2cb6de8a",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-08-27T07:45:03Z",
+      "side": 1,
+      "message": "Wir benutzen WLAN",
+      "revId": "66b065197a2a7d6abbf2c6c23a14af722cc1cfea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
