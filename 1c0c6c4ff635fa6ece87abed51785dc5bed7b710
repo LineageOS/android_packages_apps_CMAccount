@@ -53,6 +53,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_af81b9fd",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_4f65addf",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_af6d39ce",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -64,6 +82,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "Don\u0027t skip !\u003d Dennoch ueberspringen\n\nIch wuerde das eher etwas frei mit \u0027Zurueck\u0027 uebersetzen.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4f792d2f",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "Nicht ueberspringen?! Welchen Sinn ergibt ein solcher String???",
+      "parentUuid": "9af37de9_af6d39ce",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +123,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_0f73254f",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "Dannys zweiter Vorschlag.",
+      "parentUuid": "9af37de9_8f7275ac",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_6f6871bb",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -98,6 +152,41 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "\u0027das Konto\u0027 oder \u0027Ihr Konto\u0027 an Stelle von \u0027die Konten\u0027 ... man kann ja nur eins einrichten",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_ef8ea126",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "Ihr Konto",
+      "parentUuid": "9af37de9_6f6871bb",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_af98996b",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "-ein",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +210,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_8f9dd55b",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_ef9a21c5",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_2f6269d9",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -132,6 +239,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "Im Kontext wuerde ich eher \u0027E-Mail-Adresse\u0027 schreiben",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_2fadc988",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "+1 E-Mail Adresse oder doch mit Bindestrich?",
+      "parentUuid": "9af37de9_2f6269d9",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -166,6 +291,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "Die E-Mail-Adresse oder das Passwort sind ungueltig",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0faa0571",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_afa41908",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -234,6 +377,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "\u0027...mobilen CyanogenMod-Geraete\u0027?",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8feb95b0",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T20:49:51Z",
+      "side": 1,
+      "message": "\"CyanogenMod-Geraete\" kann verwirren. Es sollte deutlich werden, dass es sich um Geraete handelt, auf denen CM \"laeuft\".",
+      "parentUuid": "9af37de9_ef81014f",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
