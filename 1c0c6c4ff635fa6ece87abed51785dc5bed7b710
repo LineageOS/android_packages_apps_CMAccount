@@ -106,6 +106,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_6f02b140",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "Was meinst du? Der Kontext ist sinngemaess:\n\nDu hast die Netzwerkeinrichtung uebersprungen und jetzt kein Netzwerk, kannst also das Konto nicht einrichten\n\n[ Don\u0027t skip ]           [ Skip anyway ]\n\n\nIn diesem Fall wuerde ich die Buttons mit \u0027Zurueck\u0027 und \u0027Trotzdem ueberspringen\u0027 (oder \u0027Wirklich ueberspringen\u0027) benamen.",
+      "parentUuid": "9af37de9_4f792d2f",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_8f7275ac",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -281,6 +299,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_2ffca93d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "Ja, definitiv mit Bindestrich. Es ist ein zusammengesetztes Substantiv, muss also zusammengeschrieben werden.",
+      "parentUuid": "9af37de9_6f54f153",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_cf9f5db3",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -345,6 +381,24 @@
       "side": 1,
       "message": "Mit dem Stringnamen \"email_invalid\" wuerde ich daraus schliessen, dass der String verwendet wird, falls eine ungueltige E-Mail-Adresse verwendet wird - z.B. kein @-Zeichen?",
       "parentUuid": "9af37de9_0faa0571",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_0ff9e54d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "Ups, stimmt. Ich hab noch mal im Code nachgeschaut, und das bezieht sich wirklich nur auf die Adresse. Also \u0027Die E-Mail-Adresse ist ungueltig\u0027",
+      "parentUuid": "9af37de9_4f512d62",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -455,6 +509,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_6f8991ca",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "\u0027value added\u0027 ist \u0027Mehrwert\u0027 oder \u0027Zusatznutzen\u0027; das bedeutet nicht zwangslaeufig, dass das mit Kosten verbunden ist. Es ist IMHO schon ok, das mit \u0027erweiterte Funktionen\u0027 (oder \u0027zusaetzliche Funktionen\u0027?) zu uebersetzen.\n\nMarkus hat allerdings das \u0027laeuft\u0027 ja nicht ohne Grund in Anfuehrungszeichen gesetzt: \u0027fuer Ihre mobilen Geraete, auf denen CyanogenMod laeuft\u0027 ist zwar die woertliche Uebersetzung, aber IMHO sehr umgangssprachlich. Inwiefern kann \u0027CyanogenMod-Geraete\u0027 verwirren?",
+      "parentUuid": "9af37de9_2f4ee9c1",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_0fb6853d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -541,6 +613,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_4f86cdba",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_0f4b25b2",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_6f963196",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -587,6 +677,24 @@
       "side": 1,
       "message": "Wie waer\u0027s mit \"Ihres Kontos\"?",
       "parentUuid": "9af37de9_2f902995",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_2f9389fc",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "Bei einer Fehlermeldung ist es meiner Meinung nach besser, etwas distanzierter zu bleiben ;)",
+      "parentUuid": "9af37de9_cfcbdd1d",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -714,6 +822,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_0f90c5eb",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "Da das einer der Strings ist, der 1:1 aus der Settings-App kopiert ist (Einstellungen -\u003e Standortzugriff), wuerde ich das genau so lassen, wie es dort auftaucht. Ansonsten wird es inkonsistent.",
+      "parentUuid": "9af37de9_8fd5d5ba",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_2fe70942",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -777,6 +903,24 @@
       "side": 1,
       "message": "Mein Vorschlag: \"Genehmigte Apps [...]\"\n(Genauso wie bei den zwei weiteren Strings)",
       "parentUuid": "9af37de9_efcfc1b1",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_efbb4174",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-27T22:50:29Z",
+      "side": 1,
+      "message": "siehe oben",
+      "parentUuid": "9af37de9_6fdbd1ee",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
