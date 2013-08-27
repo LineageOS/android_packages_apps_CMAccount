@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_02b9a1e9",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "CyanogenMod",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c2cb9971",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "OK",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a2c89575",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "Dennoch ueberspringen",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_82c5915c",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "Datum \u0026 Uhrzeit?",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_62a18da9",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "Die E-Mail Adresse...",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_22ab858b",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-08-27T17:18:57Z",
+      "side": 1,
+      "message": "\\u2026",
+      "revId": "9ef114bec28fb69d939f65a43303b153805d3b88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
