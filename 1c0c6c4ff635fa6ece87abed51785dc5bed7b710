@@ -263,6 +263,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_6f54f153",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Wuerde mit Bindestrich vorschlagen - wurde ebenso bei den uebrigen Uebersetzungen so verwendet",
+      "parentUuid": "9af37de9_2fadc988",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_cf9f5db3",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -309,6 +327,24 @@
       "side": 1,
       "message": "+1",
       "parentUuid": "9af37de9_afa41908",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_4f512d62",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Mit dem Stringnamen \"email_invalid\" wuerde ich daraus schliessen, dass der String verwendet wird, falls eine ungueltige E-Mail-Adresse verwendet wird - z.B. kein @-Zeichen?",
+      "parentUuid": "9af37de9_0faa0571",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -401,6 +437,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_2f4ee9c1",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Bin der selben Meinung wie Markus.\n\nDer originale String lautet: \"A CyanogenMod Account provides access to value-added services and functionality for your mobile device running CyanogenMod.\"\nWas ist hier mit \"value-added services\" gemeint? Kostenpflichtige Dienste?",
+      "parentUuid": "9af37de9_8feb95b0",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_0fb6853d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -469,6 +523,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_0f4b25b2",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Mein Vorschlag: \"Ihr CyanogenMod-Profil wird angelegt\\u2026\"",
+      "parentUuid": "9af37de9_0f5fa50f",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_6f963196",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -497,6 +569,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "des Kontos",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_cfcbdd1d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Wie waer\u0027s mit \"Ihres Kontos\"?",
+      "parentUuid": "9af37de9_2f902995",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -554,6 +644,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_afd099ca",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9af37de9_aff2d904",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_8ff715f5",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
@@ -582,6 +690,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "Meine Standortdaten duerfen von Apps verwendet werden, die ich dazu berechtigt habe.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_8fd5d5ba",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Wuerde es evtl. mit \"nur\" besser klingen oder waere das ueberfluessig? \n\"Meine Standortdaten duerfen nur von Apps verwendet werden, die ich dazu berechtigt habe.\"",
+      "parentUuid": "9af37de9_4fda4d7a",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -633,6 +759,24 @@
       "writtenOn": "2013-08-27T19:13:52Z",
       "side": 1,
       "message": "Apps duerfen meinen Standort mithilfe von GPS auf meinem Tablet bestimmen.",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9af37de9_6fdbd1ee",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-27T22:16:38Z",
+      "side": 1,
+      "message": "Mein Vorschlag: \"Genehmigte Apps [...]\"\n(Genauso wie bei den zwei weiteren Strings)",
+      "parentUuid": "9af37de9_efcfc1b1",
       "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
