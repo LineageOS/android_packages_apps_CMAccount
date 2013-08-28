@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad58531_503e72b9",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-28T21:31:34Z",
+      "side": 1,
+      "message": "Omitir",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad58531_304be65b",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-28T21:31:34Z",
+      "side": 1,
+      "message": "Usar una cuenta existente",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
