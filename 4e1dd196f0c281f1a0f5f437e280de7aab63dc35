@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9af37de9_12e46a39",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 7215
+      },
+      "writtenOn": "2013-08-28T02:07:34Z",
+      "side": 1,
+      "message": "Vorschlag: \"CyanogenMod-Profil wird erstellt\\u2026\"",
+      "revId": "4e1dd196f0c281f1a0f5f437e280de7aab63dc35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
