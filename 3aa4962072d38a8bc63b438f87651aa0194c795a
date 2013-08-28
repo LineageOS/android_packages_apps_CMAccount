@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9af37de9_32588e56",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-28T06:05:12Z",
+      "side": 1,
+      "message": "Werf das bitte mal noch raus, das habe ich gerade translatable\u003dfalse gesetzt.",
+      "revId": "3aa4962072d38a8bc63b438f87651aa0194c795a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
