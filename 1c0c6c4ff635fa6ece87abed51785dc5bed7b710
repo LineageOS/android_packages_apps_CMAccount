@@ -563,6 +563,24 @@
     },
     {
       "key": {
+        "uuid": "9af37de9_7213b65d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-28T00:04:29Z",
+      "side": 1,
+      "message": "\u0027... installiert ist\u0027 ist doch gut - +1 :)",
+      "parentUuid": "9af37de9_2f2f09a3",
+      "revId": "1c0c6c4ff635fa6ece87abed51785dc5bed7b710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_0fb6853d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 5
