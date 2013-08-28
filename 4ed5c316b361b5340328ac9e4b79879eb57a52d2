@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9af37de9_b2b35e0a",
+        "filename": "res/values-sk/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-28T02:14:14Z",
+      "side": 1,
+      "message": "Please use \\u2026 instead of ...",
+      "revId": "4ed5c316b361b5340328ac9e4b79879eb57a52d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
