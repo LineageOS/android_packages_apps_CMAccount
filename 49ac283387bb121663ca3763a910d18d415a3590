@@ -33,6 +33,57 @@
       "revId": "49ac283387bb121663ca3763a910d18d415a3590",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad58531_6d4bd52c",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-08-28T08:55:19Z",
+      "side": 1,
+      "message": "\"De wachtwoorden komen niet overeen.\" (ref. wachtwoord wijzigen in gmail)",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad58531_4d48192e",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-08-28T08:55:19Z",
+      "side": 1,
+      "message": "Wachtwoord moet ten minste 8 tekens bevatten.",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad58531_cd62c9ad",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-08-28T08:55:19Z",
+      "side": 1,
+      "message": "Slechts één ...",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
