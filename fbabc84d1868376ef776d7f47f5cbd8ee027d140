@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_0f5209de",
+        "filename": "src/com/cyanogenmod/account/util/EncryptionUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 65
+      },
+      "writtenOn": "2013-08-29T20:26:55Z",
+      "side": 1,
+      "message": "need to use a patched secure random, or fix libcore.\n\nThis entire function makes me nervous. Let me investigate how bcprov does this.",
+      "revId": "fbabc84d1868376ef776d7f47f5cbd8ee027d140",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
