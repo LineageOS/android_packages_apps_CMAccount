@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3ae2911b_acfd4370",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Yes, \"Omitir\"",
+      "parentUuid": "5ad58531_503e72b9",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad58531_304be65b",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,177 @@
       "writtenOn": "2013-08-28T21:31:34Z",
       "side": 1,
       "message": "Usar una cuenta existente",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_6cf87b7d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Better \"Identificarse mediante una cuenta existente\"",
+      "parentUuid": "5ad58531_304be65b",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_4cf5bf81",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "I think the idea is to remark the omit action. Maybe \"Omitir en cualquier caso\". Up to you\n\n\"Omitir\" to be consistent with the previous skip string.",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ac34234a",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Not sure what %1 and %2 stand for, but terms won\u0027t be replaced, because is not part of the formmating string, so should be translate as \"%1$stérminos%2$s\"",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ac0b037d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "entrar is more generic. i prefer \"acceder\"",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_6c263b18",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Sounds horrible in spanish. I think is better something like \"Se ha producido un error mientras se creaba la cuenta\".",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_4c237f06",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Typo: Ocurrió",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_4c6a5f1c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "Sound like a MUST DO to the user. I prefer \"Consulta las ...\"",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_0c1d77bd",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "You used \"ubicación\" in all this app, so maybe we should use it on the web also.",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ec78ebfa",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "The user must have accepted previously the access, so \"..que han pedido permiso previamente..\" ó \"... que te han pedido..\".",
+      "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_6c6d1b32",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-08-29T09:52:50Z",
+      "side": 1,
+      "message": "...tu ubicación de manera más rapida...\n\nWhat about \"Se recopilarán y enviarán de forma anonima a Google datos acerca de tu ubicación actual\"",
       "revId": "0c32d182a8902fb173acc59c1ba3afc2f6debec5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
