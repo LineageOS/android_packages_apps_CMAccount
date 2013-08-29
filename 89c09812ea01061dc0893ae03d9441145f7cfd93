@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_cc99af21",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-29T10:54:30Z",
+      "side": 1,
+      "message": "Yes, it must be translated. I didn\u0027t see it.",
+      "revId": "89c09812ea01061dc0893ae03d9441145f7cfd93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ac9e6305",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-29T10:54:30Z",
+      "side": 1,
+      "message": "\"ubicación\" will be used here and in CMAccountWebsite.",
+      "revId": "89c09812ea01061dc0893ae03d9441145f7cfd93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_8ca3a74f",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-29T10:54:30Z",
+      "side": 1,
+      "message": "I\u0027ve used same translations as AOSP, for a better homogeneity. Here and below.",
+      "revId": "89c09812ea01061dc0893ae03d9441145f7cfd93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
