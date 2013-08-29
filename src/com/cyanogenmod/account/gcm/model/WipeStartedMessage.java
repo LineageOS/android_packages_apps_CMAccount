@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 package com.cyanogenmod.account.gcm.model;
 
 public class WipeStartedMessage extends EncryptedMessage {

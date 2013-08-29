@@ -19,8 +19,8 @@ package com.cyanogenmod.account.util;
 import android.util.Base64;
 import android.util.Log;
 import com.cyanogenmod.account.encryption.ECKeyPair;
-import org.spongycastle.jce.ECNamedCurveTable;
-import org.spongycastle.jce.spec.ECParameterSpec;
+import org.spongycastle.math.ec.ECCurve;
+import org.spongycastle.math.ec.ECFieldElement;
 import org.spongycastle.math.ec.ECPoint;
 
 import javax.crypto.BadPaddingException;
@@ -47,11 +47,19 @@ public class EncryptionUtils {
     private static final String TAG = EncryptionUtils.class.getSimpleName();
 
     public static class ECDH {
-        private static final ECParameterSpec ecParameterSpec = ECNamedCurveTable.getParameterSpec("secp256r1");
+        private static final BigInteger q = new BigInteger("FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF", 16);
+        private static final BigInteger a = new BigInteger("FFFFFFFF00000001000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFC", 16);
+        private static final BigInteger b = new BigInteger("5AC635D8AA3A93E7B3EBBD55769886BC651D06B0CC53B0F63BCE3C3E27D2604B", 16);
+        private static final BigInteger n = new BigInteger("FFFFFFFF00000000FFFFFFFFFFFFFFFFBCE6FAADA7179E84F3B9CAC2FC632551", 16);
+
+        private static final ECFieldElement x = new ECFieldElement.Fp(q, new BigInteger("6B17D1F2E12C4247F8BCE6E563A440F277037D812DEB33A0F4A13945D898C296", 16));
+        private static final ECFieldElement y = new ECFieldElement.Fp(q, new BigInteger("4FE342E2FE1A7F9B8EE7EB4A7C0F9E162BCE33576B315ECECBB6406837BF51F5", 16));
+
+        private static final ECCurve curve = new ECCurve.Fp(q, a, b);
+        private static final ECPoint g = new ECPoint.Fp(curve, x, y, true);
 
         private static BigInteger generatePrivateKey() {
             // Generate private key.
-            BigInteger n = ecParameterSpec.getN();
             BigInteger n1 = n.subtract(BigInteger.ONE);
             BigInteger r = new BigInteger(n.bitLength(), new SecureRandom());
             BigInteger privateKey = r.mod(n1).add(BigInteger.ONE);
@@ -59,7 +67,7 @@ public class EncryptionUtils {
         }
 
         private static ECPoint generatePublicKey(BigInteger privateKey) {
-            return ecParameterSpec.getG().multiply(privateKey);
+            return g.multiply(privateKey);
         }
 
         public static ECKeyPair generateKeyPair() {
@@ -69,7 +77,7 @@ public class EncryptionUtils {
         }
 
         public static ECPoint getPublicKey(BigInteger x, BigInteger y) {
-            return ecParameterSpec.getCurve().createPoint(x, y, false);
+            return curve.createPoint(x, y, false);
         }
 
         public static ECPoint getPublicKey(String hexX, String hexY) {
@@ -79,7 +87,7 @@ public class EncryptionUtils {
         }
 
         public static byte[] calculateSecret(BigInteger privateKey, ECPoint publicKey) {
-            ECPoint.Fp P = new ECPoint.Fp(ecParameterSpec.getCurve(), publicKey.getX(), publicKey.getY());
+            ECPoint.Fp P = new ECPoint.Fp(curve, publicKey.getX(), publicKey.getY());
             ECPoint S = P.multiply(privateKey);
             byte[] keyBytes = S.getX().toBigInteger().toByteArray();
 
