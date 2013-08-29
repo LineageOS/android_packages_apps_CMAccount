@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_0cefb7b1",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-29T09:38:21Z",
+      "side": 1,
+      "message": "- Om te beginnen met het instellen van uw apparaat, selecteert u uw taal en gaat u verder.",
+      "revId": "0108a8ca3b5f9705f69818ca139b110de3642203",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ec2a2be7",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-29T09:38:21Z",
+      "side": 1,
+      "message": "u kunt geen, lijkt net of de gebruiker het niet zelf kan?\n\n- Let op: het is niet mogelijk om accounts in te stellen",
+      "revId": "0108a8ca3b5f9705f69818ca139b110de3642203",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_8c396744",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-29T09:38:21Z",
+      "side": 1,
+      "message": "Gooogle \u003e Google\n\nEn \"Set up an account\" is volgens mij een account aanmaken?",
+      "revId": "0108a8ca3b5f9705f69818ca139b110de3642203",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_6c3f5b26",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-29T09:38:21Z",
+      "side": 1,
+      "message": "- Google-account aanmaken",
+      "revId": "0108a8ca3b5f9705f69818ca139b110de3642203",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
