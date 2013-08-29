@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3ae2911b_6c419b39",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-29T03:39:42Z",
+      "side": 1,
+      "message": "Deze constructie wordt wel vaker gebruikt. Zie de tweede zin van https://github.com/CyanogenMod/android_packages_apps_Settings/blob/cm-10.2/res/values-nl/strings.xml#L1015",
+      "parentUuid": "9af37de9_b23a3ee6",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9af37de9_923f3ad6",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-08-28T06:10:47Z",
       "side": 1,
       "message": "\u003c/string\u003e",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_4c3edfb9",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-29T03:39:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9af37de9_923f3ad6",
       "revId": "49ac283387bb121663ca3763a910d18d415a3590",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "3ae2911b_2c4b935b",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-29T03:39:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad58531_6d4bd52c",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad58531_4d48192e",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "3ae2911b_0c48d75a",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-29T03:39:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad58531_4d48192e",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad58531_cd62c9ad",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2013-08-28T08:55:19Z",
       "side": 1,
       "message": "Slechts één ...",
+      "revId": "49ac283387bb121663ca3763a910d18d415a3590",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_ac6d43ce",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-29T03:39:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad58531_cd62c9ad",
       "revId": "49ac283387bb121663ca3763a910d18d415a3590",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
