@@ -54,14 +54,17 @@ public class GeneratePublicKeysTask implements Response.ErrorListener, Response.
         boolean retry = intent.getBooleanExtra(ECDHKeyService.EXTRA_RETRY, false);
         if (retry && CMAccount.DEBUG) Log.d(TAG, "Scheduled retry");
 
+        boolean updateSignatures = intent.getBooleanExtra(ECDHKeyService.EXTRA_UPDATE_SIGNATURE, false);
+        if (updateSignatures && CMAccount.DEBUG) Log.d(TAG, "Updating signatures");
+
+        boolean upload = intent.getBooleanExtra(ECDHKeyService.EXTRA_UPLOAD, true);
+
         int keyCount = getKeyCount();
         if (keyCount < MINIMUM_KEYS && !retry) {
             generateKeyPairs(MINIMUM_KEYS - keyCount);
         }
 
-        // Always try to upload key pairs.  If the service gets killed while marking keys as uploaded, we must try to mark
-        // them as uploaded again, even if that means hitting the server a second time.
-        uploadKeyPairs(getKeyPairs());
+        if (upload) uploadKeyPairs(getKeyPairs(updateSignatures));
     }
 
     private int getKeyCount() {
@@ -107,10 +110,14 @@ public class GeneratePublicKeysTask implements Response.ErrorListener, Response.
         mContext.getContentResolver().insert(CMAccountProvider.ECDH_CONTENT_URI, values);
     }
 
-    private List<ECKeyPair> getKeyPairs() {
+    private List<ECKeyPair> getKeyPairs(boolean uploadAll) {
         List<ECKeyPair> keyPairs = new ArrayList<ECKeyPair>();
-        String selection = CMAccountProvider.ECDHKeyStoreColumns.UPLOADED + " = ?";
-        String[] selectionArgs = new String[] {"0"};
+        String selection = null;
+        String[] selectionArgs = null;
+        if (!uploadAll) {
+            selection = CMAccountProvider.ECDHKeyStoreColumns.UPLOADED + " = ?";
+            selectionArgs = new String[] {"0"};
+        }
         Cursor cursor = mContext.getContentResolver().query(CMAccountProvider.ECDH_CONTENT_URI, null, selection, selectionArgs, null);
         while (cursor.moveToNext()) {
             String publicKeyHex = cursor.getString(cursor.getColumnIndex(CMAccountProvider.ECDHKeyStoreColumns.PUBLIC));
