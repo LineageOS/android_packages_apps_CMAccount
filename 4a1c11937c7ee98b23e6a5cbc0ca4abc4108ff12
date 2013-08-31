@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_a002e26d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-31T23:09:09Z",
+      "side": 1,
+      "message": "Hmm nee, geen mooie zin, is een beetje te letterlijk zo, net alsof de gebruiker niet weet dat ie op Volgende moet klikken om verder te gaan :P\n\nIk zie dat andere talen het laatste deel ook weglaten\n\n- Om te beginnen met het instellen van uw apparaat, selecteert u uw taal.",
+      "revId": "4a1c11937c7ee98b23e6a5cbc0ca4abc4108ff12",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
