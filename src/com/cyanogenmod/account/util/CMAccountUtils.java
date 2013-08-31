@@ -40,6 +40,7 @@ import android.os.SystemProperties;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.util.Pair;
 
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -259,5 +260,24 @@ public class CMAccountUtils {
         editor.putString(CMAccount.DEVICE_SALT, salt);
         editor.commit();
 
+    }
+
+    /**
+     * Method to obtain login credentials from system properties.  If set and in debug mode, the
+     * email address and password fields will be returned so they can be automatically filled in
+     * {@link com.cyanogenmod.account.auth.AuthActivity}.
+     *
+     * @return email address and password pair
+     */
+    public static Pair<String, String> getLoginCredentials() {
+        if (!CMAccount.DEBUG) return null;
+
+        String email = SystemProperties.get("cmaccount.email");
+        String password = SystemProperties.get("cmaccount.password");
+        if (email != null && password != null) {
+            return Pair.create(email, password);
+        } else {
+            return null;
+        }
     }
 }

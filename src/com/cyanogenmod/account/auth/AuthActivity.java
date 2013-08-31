@@ -46,6 +46,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.UnderlineSpan;
 import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -228,6 +229,14 @@ public class AuthActivity extends AccountAuthenticatorActivity implements Respon
             mConfirmPasswordEdit.setVisibility(View.GONE);
             mTitle.setText(R.string.cmaccount_setup_login_title);
             mSubmitButton.setText(R.string.login);
+
+            // Prefill email and password if they are available from SystemProperties.
+            // NOTE: This only works in DEBUG mode.
+            Pair<String, String> debugCredentials = CMAccountUtils.getLoginCredentials();
+            if (debugCredentials != null) {
+                mEmailEdit.setText(debugCredentials.first);
+                mPasswordEdit.setText(debugCredentials.second);
+            }
 
             // Prefill the email field if an account already exists, useful in password reset process.
             Account account = CMAccountUtils.getCMAccountAccount(this);
