@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_209032ec",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-08-31T23:58:56Z",
+      "side": 1,
+      "message": "Voor nu lijkt me dit goed, maar als ik uiteindelijk 10.2 draai waar CMAccount in zit en blijkt dat er meerdere instellingen gedaan moeten worden nadat je je taal hebt gekozen, vind ik toch dat er \"Om te beginnen...\" bij hoort ;-) (zoals in het Engels)",
+      "revId": "af1175bde79c3b6a71fa5dc5d7f86aeab6b6d10f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
