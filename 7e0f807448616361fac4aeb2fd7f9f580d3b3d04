@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_414900d0",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3875
+      },
+      "writtenOn": "2013-09-02T17:08:53Z",
+      "side": 1,
+      "message": "existujicImu",
+      "revId": "7e0f807448616361fac4aeb2fd7f9f580d3b3d04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_2146f4bf",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 3875
+      },
+      "writtenOn": "2013-09-02T17:08:53Z",
+      "side": 1,
+      "message": "Co to? :)\n\nPredpokladam, ze je to neco s uctem.",
+      "revId": "7e0f807448616361fac4aeb2fd7f9f580d3b3d04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
