@@ -26,7 +26,6 @@ import android.content.ComponentName;
 import android.content.Context;
 
 import com.cyanogenmod.account.encryption.ECDHKeyService;
-import com.cyanogenmod.account.util.PRNGFixes;
 
 public class CMAccount extends Application {
 
@@ -72,9 +71,6 @@ public class CMAccount extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        // Apply PRNG fixes
-        PRNGFixes.apply();
-
         mCMAccountUri = getString(R.string.cmaccount_uri);
         mStatusBarManager = (StatusBarManager)getSystemService(Context.STATUS_BAR_SERVICE);
         final DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
