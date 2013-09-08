@@ -16,6 +16,24 @@
       "revId": "2b4da4beabac01464eca8d989fb929b85f2b0eed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_bda45308",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 5868
+      },
+      "writtenOn": "2013-09-08T04:42:20Z",
+      "side": 1,
+      "message": "I copied this from AOSP strings, where\u0027s identical. So the question is: Leave it to get more normalised translation or make it different and better. :)",
+      "parentUuid": "ba076199_3d34e3dc",
+      "revId": "2b4da4beabac01464eca8d989fb929b85f2b0eed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
