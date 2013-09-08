@@ -55,6 +55,10 @@
     <string name="cmaccount_add_title">CyanogenMod-account toevoegen</string>
     <string name="cmaccount_add_create_label">Een CyanogenMod-account biedt toegang tot extra diensten en functies voor uw apparaten die op CyanogenMod draaien.</string>
     <string name="cmaccount_learn_more">Lees meer\u2026</string>
+    <string name="cmaccount_update_required_title">Update vereist</string>
+    <string name="cmaccount_update_required_text">Uw versie van CyanogenMod-account is mogelijk te oud om correct te functioneren. Werk bij naar de laatste versie van CyanogenMod om een correcte werking te garanderen.</string>
+    <string name="cmaccount_update_required_short">Deze verssie is mogelijk incompatibel.</string>
+    <string name="cmaccount_checking_for_updates">Controleren op updates\u2026</string>
     <string name="cmaccount_password_changed_title">Wachtwoord gewijzigd</string>
     <string name="cmaccount_password_changed_message">Log a.u.b. in op uw CyanogenMod-account</string>
     <string name="cmaccount_login_message">Inloggen op CyanogenMod\u2026</string>
