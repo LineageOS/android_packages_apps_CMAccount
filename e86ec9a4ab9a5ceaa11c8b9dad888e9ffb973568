@@ -16,6 +16,24 @@
       "revId": "e86ec9a4ab9a5ceaa11c8b9dad888e9ffb973568",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_7279652f",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-09T00:39:33Z",
+      "side": 1,
+      "message": "Anders:\n\n- Uw versie van CyanogenMod-account is mogelijk te oud om correct te functioneren. Werk bij naar de laatste versie van CyanogenMod om een correcte werking te garanderen.",
+      "parentUuid": "ba076199_72cba573",
+      "revId": "e86ec9a4ab9a5ceaa11c8b9dad888e9ffb973568",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
