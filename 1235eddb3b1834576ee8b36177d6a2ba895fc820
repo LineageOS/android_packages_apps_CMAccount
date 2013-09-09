@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba076199_85f935cb",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-09T08:11:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba076199_258de97b",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba076199_05e9c51a",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "ba076199_65f641d9",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-09T08:11:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba076199_05e9c51a",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba076199_e5ed9126",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2013-09-09T06:45:49Z",
       "side": 1,
       "message": "- Zoeken naar updates\\u2026",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_250049aa",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-09T08:11:11Z",
+      "side": 1,
+      "message": "In CMUpdater wordt de huidige vertaling gebruikt:\n\n- https://github.com/CyanogenMod/android_packages_apps_CMUpdater/blob/cm-10.2/res/values-nl/strings.xml#L34",
+      "parentUuid": "ba076199_e5ed9126",
       "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
