@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba076199_72cba573",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-09-09T00:17:19Z",
+      "side": 1,
+      "message": "Ik vind \"incompatibel\" geen mooi word, alhoewel het volgens mij wel corrrect is. Alternatief vind ik wel lastig, \"niet geschikt\"?",
+      "revId": "e86ec9a4ab9a5ceaa11c8b9dad888e9ffb973568",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
