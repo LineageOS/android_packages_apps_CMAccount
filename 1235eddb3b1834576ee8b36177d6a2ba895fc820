@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba076199_258de97b",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-09T06:45:49Z",
+      "side": 1,
+      "message": "- Uw versie van CyanogenMod-account is mogelijk te oud. Om een correcte werking te garanderen moet u de laatste versie van CyanogenMod installeren\n\n\"correct functioneren\"en \"correct werken\" na elkaar vind ik dubbelop.",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_05e9c51a",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-09T06:45:49Z",
+      "side": 1,
+      "message": "versie \n\n1 s",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_e5ed9126",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-09T06:45:49Z",
+      "side": 1,
+      "message": "- Zoeken naar updates\\u2026",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
