@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0c5dc1_ca3bc39b",
+        "filename": "res/values-zh-rCN/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-09-10T16:10:08Z",
+      "side": 1,
+      "message": "Left a half-width colon here by accident. Will fix tomorrow.",
+      "revId": "fc139257e088cc00f38385793973b3af7b580758",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
