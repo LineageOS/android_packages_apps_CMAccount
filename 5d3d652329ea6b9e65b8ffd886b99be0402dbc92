@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0c5dc1_673f7226",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-09-10T09:59:51Z",
+      "side": 1,
+      "message": "account anziché accont",
+      "revId": "5d3d652329ea6b9e65b8ffd886b99be0402dbc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_87394644",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-09-10T09:59:51Z",
+      "side": 1,
+      "message": "un anziché uun",
+      "revId": "5d3d652329ea6b9e65b8ffd886b99be0402dbc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
