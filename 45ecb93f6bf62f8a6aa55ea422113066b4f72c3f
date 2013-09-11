@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a0c5dc1_cdd4fd48",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-09-11T07:55:59Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "9a0c5dc1_476a2e1c",
+      "revId": "45ecb93f6bf62f8a6aa55ea422113066b4f72c3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0c5dc1_27773a04",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-09-10T10:58:06Z",
       "side": 1,
       "message": "Why putting a dot here?",
+      "revId": "45ecb93f6bf62f8a6aa55ea422113066b4f72c3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_ed8ea126",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-09-11T07:55:59Z",
+      "side": 1,
+      "message": "I have see the message box and it\u0027s better with 3 dots.",
+      "parentUuid": "9a0c5dc1_27773a04",
       "revId": "45ecb93f6bf62f8a6aa55ea422113066b4f72c3f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
