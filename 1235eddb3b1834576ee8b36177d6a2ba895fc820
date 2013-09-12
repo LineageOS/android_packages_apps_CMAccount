@@ -139,6 +139,23 @@
       "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_f081d64e",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T01:12:30Z",
+      "side": 1,
+      "message": "Op mijn SGS2 valt het woord \"Google\" weg. Er kan ook niet gescrolled worden. \n\nDit zou dus korter moeten. Het is vrij essentieel dat de gebruiker weet waarnaartoe de data verzonden wordt!",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
