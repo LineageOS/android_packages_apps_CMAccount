@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0c5dc1_d064924a",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T06:25:11Z",
+      "side": 1,
+      "message": "Voor nu +1, al ben ik bang dat de zin op mijn foon nu gaat eindigen op \"en\".",
+      "revId": "36c037dfabeb101a5a5cdd9ade678f8b3e5b9d44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
