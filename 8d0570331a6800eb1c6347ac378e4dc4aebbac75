@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "9a0c5dc1_30776e04",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-09-12T06:24:54Z",
+      "side": 1,
+      "message": "??, ? ??? ??? ??????? ??????? ?? ?????.",
+      "revId": "8d0570331a6800eb1c6347ac378e4dc4aebbac75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_10746afb",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-09-12T06:24:54Z",
+      "side": 1,
+      "message": "??????????????.\n\n?????, «????????: ????????? ???????? ??????????» ?",
+      "revId": "8d0570331a6800eb1c6347ac378e4dc4aebbac75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0c5dc1_d07db2e8",
         "filename": "res/values-ru/strings.xml",
         "patchSetId": 1
