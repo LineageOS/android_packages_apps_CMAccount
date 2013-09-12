@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a0c5dc1_b07b5e7b",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T01:14:43Z",
+      "side": 1,
+      "message": "Deze knop komt aan het einde, \"beëindigen\" klinkt net alsof je stopt met het instellen, ipv dat het \"af\" is.\n\nik zou hier van maken\n\n- Klaar",
+      "revId": "1235eddb3b1834576ee8b36177d6a2ba895fc820",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba076199_258de97b",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
