@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7a016987_5a3c452f",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-09-14T21:25:51Z",
+      "side": 1,
+      "message": "Effectivement je préfères le terme \"obsolète\"",
+      "parentUuid": "9a0c5dc1_566f7a92",
+      "revId": "e5bc834a96359a60bf043a11b2bbf6794c2731a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0c5dc1_366c069c",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
