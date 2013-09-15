@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_55ad3630",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-09-15T23:40:14Z",
+      "side": 1,
+      "message": "http://pastebin.com/5SUDAMxZ",
+      "revId": "78985de84cac46778d5e8b79999cef95e8bb63f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
