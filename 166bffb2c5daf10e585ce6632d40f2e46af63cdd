@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_fb4c1378",
+        "filename": "res/values-nb/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2013-09-17T05:27:01Z",
+      "side": 1,
+      "message": "rumble? :)\n\nDen er litt kinkig å oversette. Kanskje bare enkelt og greit oversette strengen til \"Gratulerer! Enheten er nå klar.\"",
+      "revId": "166bffb2c5daf10e585ce6632d40f2e46af63cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_fbfe5304",
+        "filename": "res/values-nb/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2013-09-17T05:27:01Z",
+      "side": 1,
+      "message": "SIM-kortet",
+      "revId": "166bffb2c5daf10e585ce6632d40f2e46af63cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_3b34ebdc",
+        "filename": "res/values-nb/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2013-09-17T05:27:01Z",
+      "side": 1,
+      "message": "Endre til liten g i Gir",
+      "revId": "166bffb2c5daf10e585ce6632d40f2e46af63cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_1b312fed",
+        "filename": "res/values-nb/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2013-09-17T05:27:01Z",
+      "side": 1,
+      "message": "for å sikre",
+      "revId": "166bffb2c5daf10e585ce6632d40f2e46af63cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
