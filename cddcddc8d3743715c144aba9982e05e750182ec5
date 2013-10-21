@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a50d1a3_d21fe959",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3386
+      },
+      "writtenOn": "2013-10-21T22:30:05Z",
+      "side": 1,
+      "message": "I always use \u0027Annuller\u0027, (no sign above e) as this is how it\u0027s written in Windows",
+      "revId": "cddcddc8d3743715c144aba9982e05e750182ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_322bad84",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3386
+      },
+      "writtenOn": "2013-10-21T22:30:05Z",
+      "side": 1,
+      "message": "Please write \"email-adresse\"",
+      "revId": "cddcddc8d3743715c144aba9982e05e750182ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_f22465b0",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3386
+      },
+      "writtenOn": "2013-10-21T22:30:05Z",
+      "side": 1,
+      "message": "Haven\u0027t checked source, but I wouldn\u0027t capitalize \"Påkrævet\" here",
+      "revId": "cddcddc8d3743715c144aba9982e05e750182ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_923ac1cc",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 3386
+      },
+      "writtenOn": "2013-10-21T22:30:05Z",
+      "side": 1,
+      "message": "Please remove ,",
+      "revId": "cddcddc8d3743715c144aba9982e05e750182ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
