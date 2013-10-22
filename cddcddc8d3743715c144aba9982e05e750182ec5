@@ -53,6 +53,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_926881bc",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 2809
+      },
+      "writtenOn": "2013-10-22T00:56:59Z",
+      "side": 1,
+      "message": "Source is with capital letter",
+      "parentUuid": "3a50d1a3_f22465b0",
+      "revId": "cddcddc8d3743715c144aba9982e05e750182ec5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_923ac1cc",
         "filename": "res/values-da/strings.xml",
         "patchSetId": 1
