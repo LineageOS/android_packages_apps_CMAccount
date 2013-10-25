@@ -41,6 +41,7 @@
     <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
     <string name="setup_current_time">Τρέχουσα ώρα</string>
     <string name="setup_msg_no_network">ΠΡΟΣΟΧΗ: Δεν θα είστε σε θέση να ρυθμίστετε τους λογαριασμούς σας</string>
+    <string name="setup_warning_skip_wifi">ΠΡΟΣΟΧΗ: Ενδέχεται να υπάρξουν επιπλέον χρεώσεις δεδομένων από τον πάροχο σας.\n\nΗ ρύθμιση του τηλεφώνου μπορεί να απαιτήσει μεγάλη δραστηριότητα δικτύου.</string>
     <string name="cmaccount_setup_create_title">Δημιουργήστε έναν λογαριασμό CyanogenMod</string>
     <string name="cmaccount_setup_login_title">Συνδεθείτε στον CyanogenMod λογαριασμό σας</string>
     <string name="cmaccount_setup_email_label">Email</string>
