@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_64dbc0ee",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "Prethodni",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_84d84cf1",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "?estitamo, vaš ure?aj je spreman",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_24e5b8a7",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "postavku -\u003e konfiguraciju",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_44e244a1",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "Kreiraj -\u003e Napravi",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_e4ed908f",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "registrovana -\u003e prijavljena",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_24fcd83d",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "Dodaj CyanogenMod ra?un",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_04f3dc74",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "inkopatibilna -\u003e nekompatibilna",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_a4e788ab",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "isto kao i iznad",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_84ffec33",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1458
+      },
+      "writtenOn": "2013-10-26T02:40:21Z",
+      "side": 1,
+      "message": "Google-ove\nGoogle-u",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
