@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_e494b0e9",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-26T02:42:24Z",
+      "side": 1,
+      "message": "You can remove that comment - most languages have translated it that way.",
+      "parentUuid": "1a4dcd0f_84d84cf1",
+      "revId": "7da024765d65f479ea1c8e6bd56df9a477640530",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_24e5b8a7",
         "filename": "res/values-hr/strings.xml",
         "patchSetId": 1
