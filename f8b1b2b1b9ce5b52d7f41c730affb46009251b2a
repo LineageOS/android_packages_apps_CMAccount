@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_95a07492",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-10-27T11:42:49Z",
+      "side": 1,
+      "message": "Geeft niet, ik geloof je op jouw woord, \"selecteert u uw taal\" klinkt nog mee gebiedender dan \"selecteer uw taal\" maar dat zal alleen voor puristen gelden. Ik ben meer voor \u0027algemeen spraakgebruik\u0027 :-)\nGroet Tom.",
+      "parentUuid": "1a4dcd0f_cab41bd3",
+      "revId": "f8b1b2b1b9ce5b52d7f41c730affb46009251b2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_4f2c9dab",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
