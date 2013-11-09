@@ -16,6 +16,24 @@
       "revId": "5abbe8093dd3abfd5ca6872aacb87090e283a169",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_b7e7bfab",
+        "filename": "res/values-sv/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 7113
+      },
+      "writtenOn": "2013-11-09T11:06:51Z",
+      "side": 1,
+      "message": "Oops, missed that one. Uploading patch.",
+      "parentUuid": "fa1b9901_17cc6b34",
+      "revId": "5abbe8093dd3abfd5ca6872aacb87090e283a169",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
