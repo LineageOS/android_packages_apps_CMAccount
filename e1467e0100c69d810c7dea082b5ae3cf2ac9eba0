@@ -1,0 +1,242 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_e4a3434e",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"existing\"\u003ePrisijungti prie turimos paskyros\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_848927cd",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"setup_complete\"\u003eNustatymas baigtas\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_a486abb7",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "Si?ly?iau: Sveikiname! J?s? plan?etinis kompiuteris yra pasiruoštas darbui.",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_44930ffb",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"setup_welcome\"\u003eJus sveikina CyanogenMod\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_649093ed",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "Nematau EN varianto. Ta?iau \"tablet?s\" ir telefono nebereikia kurti... :)",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_04bc376b",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"cmaccount_setup_email_label\"\u003eEl. paštas\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_24c13be5",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"cmaccount_setup_email_unavailable_label\"\u003eEl. pašto adresas jau registruotas\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_c4b5df7e",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"cmaccount_setup_email_invalid_label\"\u003eNeteisingas el. pašto adresas\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_e4ba636e",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "Reikt? paži?r?ti, \"paslaugos\" kažkaip nebesiklijuoja. + s?lygomis.",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_84b0478d",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "???",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_a4ad4b33",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"cmaccount_login_error_message\"\u003eNetesingas el. pašto adresas arba slaptažodis.\u003c/string\u003e",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_44aa2f1b",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "bendraujant \u003d susijungiant",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_64a73350",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "Si?ly?iau: Leisti programoms naudoti J?s? plan?etinio kompiuterio GPS, kad nustatyt? J?s? viet?",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_0463d71b",
+        "filename": "res/values-lt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 7638
+      },
+      "writtenOn": "2013-11-09T00:52:25Z",
+      "side": 1,
+      "message": "Si?ly?iau: Leisti programoms naudoti J?s? telefono GPS, kad nustatyt? J?s? viet?",
+      "revId": "e1467e0100c69d810c7dea082b5ae3cf2ac9eba0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
