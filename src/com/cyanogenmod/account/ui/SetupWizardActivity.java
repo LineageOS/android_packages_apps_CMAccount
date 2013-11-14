@@ -380,7 +380,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
         @Override
         public Fragment getItem(int i) {
-            return mPageList.get(i).createFragment();
+            return mPageList.get(i).lazyCreateFragment();
         }
 
         @Override

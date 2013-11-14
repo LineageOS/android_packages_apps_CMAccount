@@ -61,6 +61,13 @@ public abstract class Page implements PageNode {
         return getId() == id ? this : null;
     }
 
+    private Fragment lazy;
+    public Fragment lazyCreateFragment() {
+        if (lazy != null)
+            return lazy;
+        return lazy = createFragment();
+    }
+
     public abstract Fragment createFragment();
 
     public abstract int getNextButtonResId();
