@@ -41,6 +41,7 @@ import com.cyanogenmod.account.receiver.ApplyHexoIconsReceiver;
 import com.cyanogenmod.account.setup.*;
 import com.cyanogenmod.account.util.CMAccountUtils;
 import com.cyanogenmod.account.util.WhisperPushUtils;
+import com.cyanogenmod.account.util.EnableAccessibilityController;
 
 import android.app.AppGlobals;
 import android.content.ComponentName;
@@ -56,6 +57,7 @@ import android.provider.Settings;
 import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -131,6 +133,13 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
             @Override
             public void onClick(View view) {
                 doPrevious();
+            }
+        });
+        final EnableAccessibilityController acc = new EnableAccessibilityController(this);
+        mViewPager.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return acc.onInterceptTouchEvent(event);
             }
         });
         onPageTreeChanged();
