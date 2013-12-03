@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">CyanogenMod Konts</string>
+
+    <string name="next">Nākamais</string>
+    <string name="continue_label">Turpināt</string>
+    <string name="prev">Atgriesties</string>
+    <string name="skip">Izlaist</string>
+    <string name="finish">Pabeigt</string>
+    <string name="cancel">Atcelt</string>
+    <string name="create">Izveidot</string>
+    <string name="login">Ielogoties</string>
+    <string name="ok">Labi</string>
+    <string name="existing">Ielogoties ar esošo kontu</string>
+    <string name="new_account">Izveidot jaunu kontu</string>
+    <string name="skip_anyway">Turpināt</string>
+    <string name="dont_skip">Neizlaist</string>
+
+    <string name="setup_complete">Uzstādīšana ir pabeigta</string>
+    <string name="setup_complete_summary" product="tablet">Apsveicam! Tavs planšetdators ir gatavs darbam.</string>
+    <string name="setup_complete_summary" product="default">Apsveicam! Tavs viedtālrunis ir gatavs darbam.</string>
+    <string name="setup_welcome">Laipni lūgti CyanogenMod</string>
+    <string name="setup_welcome_summary" product="tablet">Lai sāktu planšetdatora uzstādīšanu izvēlieties valodu.</string>
+    <string name="setup_welcome_summary" product="default">Lai sāktu viedtālruņa uzstādīšanu izvēlieties valodu.</string>
+    <string name="setup_cmaccount">Iestatīt CyanogenMod kontu</string>
+    <string name="setup_sim_missing">Ievietojiet SIM karti</string>
+    <string name="setup_google_account">Google konts</string>
+    <string name="setup_location">Atrašanās vietas iestatījumi</string>
+    <string name="setup_datetime">Datuma un laika iestatījumi</string>
+    <string name="setup_current_date">Pašreizejais datums</string>
+    <string name="setup_current_time">Pašreizejais laiks</string>
+    <string name="setup_msg_no_network">Brīdinājums: Jums nebūs iespējams iestatīt kontu</string>
+    <string name="setup_warning_skip_wifi" product="tablet">Brīdinājums: Var rasties viesabonēšanas izmaksas.\n\nPlanšetdatora uzstādīšana var prasīt ievērojamu datu pārraidi.</string>
+    <string name="setup_warning_skip_wifi" product="default">Brīdinājums: Var rasties viesabonēšanas izmaksas.\n\nViedtālruņa uzstādīšana var prasīt ievērojamu datu pārraidi.</string>
+
+    <string name="cmaccount_setup_create_title">Izveidot CyanogenMod kontu</string>
+    <string name="cmaccount_setup_login_title">Ielogoties ar CyanogenMod kontu</string>
+    <string name="cmaccount_setup_email_label">Ē-pasts</string>
+    <string name="cmaccount_setup_email_unavailable_label">Ē-pasts jau ir reģistrēts</string>
+    <string name="cmaccount_setup_email_invalid_label">Ievadīta nederīga ē-pasta adrese</string>
+    <string name="cmaccount_setup_password_label">Parole</string>
+    <string name="cmaccount_setup_password_create_label">Parole (min. 8 simboli)</string>
+    <string name="cmaccount_setup_password_mismatch_label">Parole nesakrīt.</string>
+    <string name="cmaccount_setup_password_invalid_label">Parolei ir jābūt vismaz 8 simbolu garai</string>
+    <string name="cmaccount_setup_confirm_password_label">Parole atkārtoti</string>
+    <string name="cmaccount_setup_tos_label">Es piekrītu %1$nosacījumiem%2$</string>
+    <string name="cmaccount_add_title">Pievienot CyanogenMod  kontu</string>
+    <string name="cmaccount_add_create_label">CyanogenMod konts nodrošina piekļuvi pievienotajiem pakalpojumiem un funkcionalitātei ko nodrošina CyanogenMod komanda.</string>
+    <string name="cmaccount_learn_more">Uzziniet vairāk\u2026</string>
+
+    <string name="cmaccount_update_required_title">Nepieciešams Atjauninājums</string>
+    <string name="cmaccount_update_required_text">Šis CyanogenMod konts var būt nesaderīgs. Lūdzu atjaunojiet CyanogenMod versiju ierīcē lai nodrošinātu saderību.</string>
+    <string name="cmaccount_update_required_short">Šī versija var būt nesaderīga.</string>
+    <string name="cmaccount_checking_for_updates">Pārbauda atjauninajumus.</string>
+
+    <string name="cmaccount_password_changed_title">Parole ir mainīta</string>
+    <string name="cmaccount_password_changed_message">Lūdzu ielogojieties ar CyanogenMod kontu</string>
+
+    <string name="cmaccount_login_message">Ielogojas kontā</string>
+    <string name="cmaccount_creating_profile_message">Tiek veidots Jūsu CyanogenMod profils</string>
+
+    <string name="cmaccount_login_error_title">Ielogošanās neizdevās</string>
+    <string name="cmaccount_login_error_message">Nederīgs ē-pasts vai parole</string>
+    <string name="cmaccount_server_error_title">Servera kļūda</string>
+    <string name="cmaccount_create_account_error_title">Kļūda izveidojot kontu</string>
+    <string name="cmaccount_server_error_message">Radās kļūda komunicējot ar serveri. Lūdzu mēginiet vēlāk.</string>
+
+    <string name="cmaccount_error_multiple_accounts">Tikai viens konts ir atļauts ierīcē.</string>
+
+    <string name="sim_missing_summary" product="tablet">Sekojiet SIM kartes instrukcijām kas nāca komplektācijā ar Jūsu planšetdatoram.</string>
+    <string name="sim_missing_summary" product="default">Sekojiet SIM kartes instrukcijām kas nāca komplektācijā ar Jūsu viedtālruni.</string>
+    <string name="google_account_summary">Vai vēlaties iestatīt Google kontu?</string>
+    <string name="btn_google_account">Iestaties Google kontu</string>
+
+    <string name="location_access_title">Pieeja manai atrašanās vietai</string>
+    <string name="location_access_summary">Ļaut aplikācijām izmantot manu atrašanās vietu ja tās to ir prasījušas</string>
+    <string name="location_sources_heading">Atrašanāš vietas avoti</string>
+    <string name="location_gps">GPS satelīti</string>
+    <string name="location_street_level" product="tablet">Ļaut aplikācijām izmantot planšetdatora GPS lai noteiktu precīzu atrašanās vietu</string>
+    <string name="location_street_level" product="default">Ļaut aplikācijām izmantot viedtālruņa GPS lai noteiktu precīzu atrašanās vietu</string>
+    <string name="location_network_based">Wi-Fi &amp; mobilo tīklu atrašanās vieta</string>
+    <string name="location_neighborhood_level">Ļaut aplikācijām izmantot Google atrašanāš vietas servisus lai noteiktu Jūsu atrašanās vietu ātrāk. Anonīma statistika tiks ievākta un nosūtīta Google.</string>
+</resources>
