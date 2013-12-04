@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa80f949_6d1ace70",
+        "filename": "res/values-ast/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-12-04T14:15:48Z",
+      "side": 1,
+      "message": "Same as below",
+      "revId": "ecb6e11ba64d424fcd9790aaa96c612b35881ae4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_8d13725c",
+        "filename": "res/values-ast/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-12-04T14:15:48Z",
+      "side": 1,
+      "message": "Unescaped apostroph causes build breakage.\nMust be: l\\\u0027accesu\nPlease check for more occurences.",
+      "revId": "ecb6e11ba64d424fcd9790aaa96c612b35881ae4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
