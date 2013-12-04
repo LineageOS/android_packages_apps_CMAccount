@@ -43,8 +43,8 @@
     <string name="setup_current_date">Data actual</string>
     <string name="setup_current_time">Hora actual</string>
     <string name="setup_msg_no_network">AVISU: Nun vas poder configurar les tos cuentes</string>
-    <string name="setup_warning_skip_wifi" product="tablet">AVISU: Ye posible que se facturen cargos de datos adicionales.\n\nLa configuración de la tablet pue riquir una gran cantidá d'actividá de rede.</string>
-    <string name="setup_warning_skip_wifi" product="default">AVISO: Ye posible que se facturen cargos de datos adicionales.\n\nLa configuración del teléfonu pue riquir una gran cantidá d'actividad de rede.</string>
+    <string name="setup_warning_skip_wifi" product="tablet">AVISU: Ye posible que se facturen cargos de datos adicionales.\n\nLa configuración de la tablet pue riquir una gran cantidá d\'actividá de rede.</string>
+    <string name="setup_warning_skip_wifi" product="default">AVISO: Ye posible que se facturen cargos de datos adicionales.\n\nLa configuración del teléfonu pue riquir una gran cantidá d\'actividad de rede.</string>
     <string name="cmaccount_setup_create_title">Crear una cuenta de CyanogenMod</string>
     <string name="cmaccount_setup_login_title">Entrar na to cuenta de CyanogenMod</string>
     <string name="cmaccount_setup_email_label">Corréu-e</string>
@@ -55,12 +55,12 @@
     <string name="cmaccount_setup_password_mismatch_label">¡Les contraseñes nun concasen!</string>
     <string name="cmaccount_setup_password_invalid_label">¡La contraseña tien de tener a lo menos 8 caráuteres!</string>
     <string name="cmaccount_setup_confirm_password_label">Confirmar contraseña</string>
-    <string name="cmaccount_setup_tos_label">Toi d'acuerdu colos %1$stérminos%2$s del serviciu</string>
+    <string name="cmaccount_setup_tos_label">Toi d\'acuerdu colos %1$stérminos%2$s del serviciu</string>
     <string name="cmaccount_add_title">Amestar una cuenta de CyanogenMod</string>
-    <string name="cmaccount_add_create_label">Una cuenta de CyanogenMod permite l'accesu a servicios de valor añadíu y funcionalidaes estres pal to preséu CyanogenMod.</string>
+    <string name="cmaccount_add_create_label">Una cuenta de CyanogenMod permite l\'accesu a servicios de valor añadíu y funcionalidaes estres pal to preséu CyanogenMod.</string>
     <string name="cmaccount_learn_more">Lleer más\u2026</string>
     <string name="cmaccount_update_required_title">Anovamientu necesariu</string>
-    <string name="cmaccount_update_required_text">Esta versión de Cuenta CyanogenMod pue ser incompatible. Por favor, anueva a la cabera versión de CyanogenMod p'asegurar la compatibilidá.</string>
+    <string name="cmaccount_update_required_text">Esta versión de Cuenta CyanogenMod pue ser incompatible. Por favor, anueva a la cabera versión de CyanogenMod p\'asegurar la compatibilidá.</string>
     <string name="cmaccount_update_required_short">Esta versión pue ser incompatible.</string>
     <string name="cmaccount_checking_for_updates">Comprobar anovamientos.</string>
 
@@ -74,8 +74,8 @@
     <string name="cmaccount_create_account_error_title">Hebo un fallu mentanto se creaba la cuenta</string>
     <string name="cmaccount_server_error_message">Hebo un fallu na comunicación col sirvidor. Por favor, inténtalo más tarde.</string>
     <string name="cmaccount_error_multiple_accounts">Namái se permite una cuenta de CyanogenMod por preséu</string>
-    <string name="sim_missing_summary" product="tablet">Consulta les instrucciones de la tarxeta SIM que s'inclúin cola to tablet.</string>
-    <string name="sim_missing_summary" product="default">Consulta les instrucciones de la tarxeta SIM que s'inclúin col to teléfonu.</string>
+    <string name="sim_missing_summary" product="tablet">Consulta les instrucciones de la tarxeta SIM que s\'inclúin cola to tablet.</string>
+    <string name="sim_missing_summary" product="default">Consulta les instrucciones de la tarxeta SIM que s\'inclúin col to teléfonu.</string>
     <string name="google_account_summary">¿Quies configurar una cuenta de Google?</string>
     <string name="btn_google_account">Configurar cuenta de Google</string>
     <string name="location_access_title">Accesu a la to llocalización</string>
