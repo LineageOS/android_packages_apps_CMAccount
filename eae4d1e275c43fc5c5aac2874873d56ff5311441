@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_9b341b4b",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-26T01:06:53Z",
+      "side": 1,
+      "message": "Remove _fixit",
+      "revId": "eae4d1e275c43fc5c5aac2874873d56ff5311441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_bb39df43",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-26T01:06:53Z",
+      "side": 1,
+      "message": "Remove _fixit",
+      "revId": "eae4d1e275c43fc5c5aac2874873d56ff5311441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_5b3f8325",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-26T01:06:53Z",
+      "side": 1,
+      "message": "Remove _fixit",
+      "revId": "eae4d1e275c43fc5c5aac2874873d56ff5311441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_fb2f57f4",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-26T01:06:53Z",
+      "side": 1,
+      "message": "Please remove the _fixit part. This is used in Transifex to circumvent problems with the product attribute",
+      "revId": "eae4d1e275c43fc5c5aac2874873d56ff5311441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_7b3cc72f",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-26T01:06:53Z",
+      "side": 1,
+      "message": "Remove _fixit",
+      "revId": "eae4d1e275c43fc5c5aac2874873d56ff5311441",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
