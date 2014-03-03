@@ -54,6 +54,7 @@ public class GoogleAccountPage extends Page {
         protected void setUpPage() {
             TextView summaryView = (TextView) mRootView.findViewById(android.R.id.summary);
             summaryView.setText(R.string.google_account_summary);
+            summaryView.setTypeface(mFont);
             mRootView.findViewById(R.id.google_button).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

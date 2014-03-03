@@ -27,6 +27,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.InputFilter;
@@ -694,6 +695,8 @@ public class LocalePicker extends LinearLayout {
         mInputText.setFilters(new InputFilter[] {
             new InputTextFilter()
         });
+
+        mInputText.setTypeface(Typeface.createFromAsset(context.getAssets(),"fonts/Lato-Regular.ttf"));
 
         mInputText.setRawInputType(InputType.TYPE_CLASS_NUMBER);
         mInputText.setImeOptions(EditorInfo.IME_ACTION_DONE);
