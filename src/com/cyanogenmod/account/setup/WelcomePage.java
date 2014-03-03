@@ -16,12 +16,17 @@
 
 package com.cyanogenmod.account.setup;
 
+import com.cyanogenmod.account.CMAccount;
 import com.cyanogenmod.account.R;
+import com.cyanogenmod.account.auth.AuthActivity;
+import com.cyanogenmod.account.auth.AuthClient;
 import com.cyanogenmod.account.ui.LocalePicker;
 import com.cyanogenmod.account.ui.SetupPageFragment;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -33,7 +38,6 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class WelcomePage extends Page {
-
     public WelcomePage(Context context, SetupDataCallbacks callbacks, int titleResourceId) {
         super(context, callbacks, titleResourceId);
     }

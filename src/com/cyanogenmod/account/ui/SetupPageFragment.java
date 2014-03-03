@@ -48,8 +48,7 @@ public abstract class SetupPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(getLayoutResource(), container, false);
-        TextView titleView = (TextView) mRootView.findViewById(android.R.id.title);
-        titleView.setText(getTitleResource());
+        ((TextView) mRootView.findViewById(android.R.id.title)).setText(getTitleResource());
         return mRootView;
     }
 

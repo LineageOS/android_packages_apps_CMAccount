@@ -30,6 +30,7 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import java.util.Observable;
 import java.util.Observer;

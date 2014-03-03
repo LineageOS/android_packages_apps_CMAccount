@@ -91,8 +91,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         } else {
             mSharedPreferences.edit().putBoolean(KEY_SIM_MISSING_SHOWN, false).commit();
         }
+
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
+
         mSetupData.registerListener(this);
         mPagerAdapter = new CMPagerAdapter(getFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
