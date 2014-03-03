@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.CMAccount" parent="@android:style/Theme.Holo.Light">
+    <style name="Theme.CMAccount" parent="@android:style/Theme.Holo">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
@@ -27,13 +27,12 @@
         <item name="android:paddingLeft">6dp</item>
         <item name="android:paddingBottom">4dp</item>
         <item name="android:paddingTop">@dimen/page_top_margin</item>
-        <item name="android:background">@color/light_gray</item>
+        <item name="android:background">@drawable/bg</item>
     </style>
 
     <style name="SetupWizardCard">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@drawable/card</item>
     </style>
 
     <style name="SetupWizardPageContent">
@@ -45,7 +44,7 @@
     </style>
 
     <style name="SetupWizardCard.Composite" parent="@style/SetupWizardPageContent">
-        <item name="android:background">@drawable/card</item>
+       <!--  <item name="android:background">@drawable/card</item> -->
     </style>
 
     <style name="SetupWizardPageTitle">
@@ -68,7 +67,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textStyle">italic</item>
-        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="SetupWizardPageLink" parent="@android:style/Widget.ActionButton">
