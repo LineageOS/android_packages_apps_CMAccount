@@ -28,8 +28,11 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class CMAccountPage extends Page {
 
@@ -67,19 +70,28 @@ public class CMAccountPage extends Page {
 
         @Override
         protected void setUpPage() {
-            mRootView.findViewById(R.id.existing_button).setOnClickListener(new View.OnClickListener() {
+            ((TextView) mRootView.findViewById(R.id.cmaccount_add_create)).setTypeface(mFont);
+            ((TextView) mRootView.findViewById(R.id.cmaccount_or)).setTypeface(mFont, Typeface.BOLD);
+
+            final Button existing_button = (Button) mRootView.findViewById(R.id.existing_button);
+            existing_button.setTypeface(mFont);
+            existing_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     loginCMAccount();
                 }
             });
-            mRootView.findViewById(R.id.new_button).setOnClickListener(new View.OnClickListener() {
+            final Button new_button = (Button) mRootView.findViewById(R.id.new_button);
+            new_button.setTypeface(mFont);
+            new_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     createCMAccount();
                 }
             });
-            mRootView.findViewById(R.id.learn_more_button).setOnClickListener(new View.OnClickListener() {
+            final Button learn_more_button = (Button) mRootView.findViewById(R.id.learn_more_button);
+            learn_more_button.setTypeface(mFont);
+            learn_more_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if (!CMAccountUtils.isWifiConnected(getActivity()) || !CMAccountUtils.isNetworkConnected(getActivity())) {

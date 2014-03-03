@@ -21,6 +21,7 @@ import com.cyanogenmod.account.setup.SetupDataCallbacks;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,7 @@ public abstract class SetupPageFragment extends Fragment {
     protected String mKey;
     protected Page mPage;
     protected View mRootView;
+    protected Typeface mFont;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public abstract class SetupPageFragment extends Fragment {
         if (mKey == null) {
             throw new IllegalArgumentException("No KEY_PAGE_ARGUMENT given");
         }
+
+        mFont = Typeface.createFromAsset(getActivity().getAssets(),"fonts/Lato-Regular.ttf");
     }
 
     @Override
@@ -50,6 +54,7 @@ public abstract class SetupPageFragment extends Fragment {
         mRootView = inflater.inflate(getLayoutResource(), container, false);
         TextView titleView = (TextView) mRootView.findViewById(android.R.id.title);
         titleView.setText(getTitleResource());
+        titleView.setTypeface(mFont);
         return mRootView;
     }
 
