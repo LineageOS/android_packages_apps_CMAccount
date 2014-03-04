@@ -33,11 +33,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.XmlResourceParser;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.SimpleAdapter;
@@ -119,7 +121,7 @@ public class DateTimePage extends Page {
         @Override
         protected void setUpPage() {
             final Spinner spinner = (Spinner) mRootView.findViewById(R.id.timezone_list);
-            final SimpleAdapter adapter = constructTimezoneAdapter(getActivity(), false);
+            final SimpleAdapter adapter = constructTimezoneAdapter(getActivity(), false, mFont);
             mCurrentTimeZone = TimeZone.getDefault();
             mDateView = mRootView.findViewById(R.id.date_item);
             mDateView.setOnClickListener(new View.OnClickListener() {
@@ -135,8 +137,12 @@ public class DateTimePage extends Page {
                     showTimePicker();
                 }
             });
+            ((TextView)mRootView.findViewById(R.id.date_title)).setTypeface(mFont);
             mDateTextView = (TextView)mRootView.findViewById(R.id.date_text);
+            mDateTextView.setTypeface(mFont);
+            ((TextView)mRootView.findViewById(R.id.time_title)).setTypeface(mFont);
             mTimeTextView = (TextView)mRootView.findViewById(R.id.time_text);
+            mTimeTextView.setTypeface(mFont);
             // Pre-select current/default timezone
             mHandler.post(new Runnable() {
                 @Override
@@ -229,7 +235,8 @@ public class DateTimePage extends Page {
     }
 
     private static SimpleAdapter constructTimezoneAdapter(Context context,
-            boolean sortedByName) {
+            boolean sortedByName,
+            final Typeface font) {
         final String[] from = new String[] {KEY_DISPLAYNAME, KEY_GMT};
         final int[] to = new int[] {android.R.id.text1, android.R.id.text2};
 
@@ -241,7 +248,25 @@ public class DateTimePage extends Page {
                 sortedList,
                 R.layout.date_time_setup_custom_list_item_2,
                 from,
-                to);
+                to) {
+            private void setFont(final View root) {
+                for (int i = 0; i < to.length; i++) {
+                    ((TextView) root.findViewById(to[i])).setTypeface(font);
+                }
+            }
+
+            public View getView(int position, View view, ViewGroup parent) {
+                final View root = super.getView(position, view, parent);
+                setFont(root);
+                return root;
+            }
+
+            public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                final View root = super.getDropDownView(position, convertView, parent);
+                setFont(root);
+                return root;
+            }
+        };
 
         return adapter;
     }

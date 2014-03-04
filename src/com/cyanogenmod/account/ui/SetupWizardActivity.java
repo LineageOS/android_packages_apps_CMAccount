@@ -42,6 +42,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
@@ -91,8 +92,15 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         } else {
             mSharedPreferences.edit().putBoolean(KEY_SIM_MISSING_SHOWN, false).commit();
         }
+
+        final Typeface font = Typeface.createFromAsset(getAssets(),"fonts/Lato-Regular.ttf");
+
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
+
+        mNextButton.setTypeface(font);
+        mPrevButton.setTypeface(font);
+
         mSetupData.registerListener(this);
         mPagerAdapter = new CMPagerAdapter(getFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
