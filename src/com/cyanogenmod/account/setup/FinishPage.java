@@ -24,6 +24,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class FinishPage extends Page {
 
@@ -50,7 +51,9 @@ public class FinishPage extends Page {
     public static class FinishFragment extends SetupPageFragment {
 
         @Override
-        protected void setUpPage() {}
+        protected void setUpPage() {
+            ((TextView) mRootView.findViewById(R.id.setup_complete)).setTypeface(mFont);
+        }
 
         @Override
         protected int getLayoutResource() {

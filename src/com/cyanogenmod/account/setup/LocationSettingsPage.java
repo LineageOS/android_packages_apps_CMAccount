@@ -30,6 +30,7 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -109,12 +110,18 @@ public class LocationSettingsPage extends Page {
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
             mLocationAccess = (Switch) mRootView.findViewById(R.id.location_switch);
+            ((TextView) mRootView.findViewById(R.id.location_title)).setTypeface(mFont);
+            ((TextView) mRootView.findViewById(R.id.location_summary)).setTypeface(mFont);
             mGpsRow = mRootView.findViewById(R.id.gps);
             mGpsRow.setOnClickListener(mGpsClickListener);
             mGps = (CheckBox) mRootView.findViewById(R.id.gps_checkbox);
+            ((TextView) mRootView.findViewById(R.id.gps_title)).setTypeface(mFont);
+            ((TextView) mRootView.findViewById(R.id.gps_summary)).setTypeface(mFont);
             mNetworkRow = mRootView.findViewById(R.id.network);
             mNetworkRow.setOnClickListener(mNetworkClickListener);
             mNetwork = (CheckBox) mRootView.findViewById(R.id.network_checkbox);
+            ((TextView) mRootView.findViewById(R.id.network_title)).setTypeface(mFont);
+            ((TextView) mRootView.findViewById(R.id.network_summary)).setTypeface(mFont);
         }
 
         @Override
