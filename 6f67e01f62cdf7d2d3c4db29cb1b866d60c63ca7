@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_e69fa8b2",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2014-03-08T04:43:12Z",
+      "side": 1,
+      "message": "Even los van de build failure, hier de punt weg?",
+      "revId": "6f67e01f62cdf7d2d3c4db29cb1b866d60c63ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
