@@ -34,6 +34,24 @@
       "revId": "6f67e01f62cdf7d2d3c4db29cb1b866d60c63ca7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_81ca064e",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-10T02:44:22Z",
+      "side": 1,
+      "message": "punt staat ook in het Engels",
+      "parentUuid": "bae84128_c681c491",
+      "revId": "6f67e01f62cdf7d2d3c4db29cb1b866d60c63ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
