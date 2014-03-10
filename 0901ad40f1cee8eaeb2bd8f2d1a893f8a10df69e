@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_acb6213b",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3916
+      },
+      "writtenOn": "2014-03-10T10:48:44Z",
+      "side": 1,
+      "message": "in WhisperPush c\u0027è \"crittografati\" al posto di \"sicuri\".\nTutto sommato \"sicuri\" è forse anche meglio, ma occorre adeguare l\u0027altra parte. Come procediamo?",
+      "revId": "0901ad40f1cee8eaeb2bd8f2d1a893f8a10df69e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
