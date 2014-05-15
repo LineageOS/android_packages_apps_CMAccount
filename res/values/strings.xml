@@ -29,8 +29,8 @@
     <string name="login">Login</string>
     <string name="ok">OK</string>
     <string name="or">or</string>
-    <string name="existing">Log in to existing account</string>
-    <string name="new_account">Create a new account</string>
+    <string name="existing">Existing</string>
+    <string name="new_account">New</string>
     <string name="skip_anyway">Skip anyway</string>
     <string name="dont_skip">Don\'t skip</string>
 
