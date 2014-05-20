@@ -58,6 +58,9 @@
         android:theme="@style/Theme.CMAccount"
         android:name=".CMAccount">
 
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <service android:name="com.cyanogenmod.account.auth.AuthService"
             android:exported="true">
 
