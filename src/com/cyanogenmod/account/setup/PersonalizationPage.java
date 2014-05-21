@@ -17,19 +17,25 @@ package com.cyanogenmod.account.setup;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.pm.ThemeUtils;
+import android.content.res.CustomTheme;
+import android.content.res.ThemeManager;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.cyanogenmod.account.R;
 import com.cyanogenmod.account.ui.SetupPageFragment;
+import com.cyanogenmod.account.util.CMAccountUtils;
 
-public class PrivacySettingsPage extends Page {
+public class PersonalizationPage extends Page {
 
-    private static final String TAG = PrivacySettingsPage.class.getSimpleName();
+    private static final String TAG = PersonalizationPage.class.getSimpleName();
     private Bundle mPageState;
 
-    public PrivacySettingsPage(Context context, SetupDataCallbacks callbacks, int titleResourceId) {
+    public PersonalizationPage(Context context, SetupDataCallbacks callbacks, int titleResourceId) {
         super(context, callbacks, titleResourceId);
     }
 
@@ -53,6 +59,12 @@ public class PrivacySettingsPage extends Page {
 
         @Override
         protected void setUpPage() {
+            if (hideWhisperPush(getActivity())) {
+                ViewGroup whisperPushLayout = (ViewGroup) mRootView.findViewById(R.id.whisperpush);
+                if (whisperPushLayout != null) {
+                    whisperPushLayout.setVisibility(View.GONE);
+                }
+            }
             Switch whisperPushSwitch = (Switch) mRootView.findViewById(R.id.whisperpush_switch);
             mPageState.putBoolean("register", whisperPushSwitch.isChecked());
             whisperPushSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -61,16 +73,44 @@ public class PrivacySettingsPage extends Page {
                     mPageState.putBoolean("register", b);
                 }
             });
+
+
+            Switch defaultThemeSwitch = (Switch) mRootView.findViewById(R.id.apply_default_theme_switch);
+            if (hideThemeSwitch(getActivity())) {
+                defaultThemeSwitch.setChecked(true);
+            } else {
+                ViewGroup themeLayout = (ViewGroup) mRootView.findViewById(R.id.apply_default_theme);
+                themeLayout.setVisibility(View.GONE);
+            }
+            mPageState.putBoolean("apply_default_theme", defaultThemeSwitch.isChecked());
+            defaultThemeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    mPageState.putBoolean("apply_default_theme", b);
+                }
+            });
         }
 
         @Override
         protected int getLayoutResource() {
-            return R.layout.setup_privacy_settings_page;
+            return R.layout.setup_personalization_page;
         }
 
         @Override
         protected int getTitleResource() {
-            return R.string.setup_privacy;
+            return R.string.setup_personalization;
         }
+    }
+
+    protected static boolean hideWhisperPush(Context context) {
+        return CMAccountUtils.isGSMPhone(context) && CMAccountUtils.isSimMissing(context);
+    }
+
+    protected static boolean hideThemeSwitch(Context context) {
+        return ThemeUtils.getDefaultThemePackageName(context) == CustomTheme.HOLO_DEFAULT;
+    }
+
+    public static boolean skipPage(Context context) {
+        return hideWhisperPush(context) && hideThemeSwitch(context);
     }
 }
