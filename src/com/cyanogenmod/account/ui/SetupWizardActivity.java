@@ -16,7 +16,9 @@
 
 package com.cyanogenmod.account.ui;
 
+import android.content.pm.ThemeUtils;
 import android.content.res.ThemeManager;
+import android.content.res.ThemeManager.ThemeChangeListener;
 import com.cyanogenmod.account.CMAccount;
 import com.cyanogenmod.account.R;
 import com.cyanogenmod.account.gcm.GCMUtil;
@@ -51,7 +53,8 @@ import android.widget.Button;
 
 import java.util.List;
 
-public class SetupWizardActivity extends Activity implements SetupDataCallbacks {
+public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
+    ThemeChangeListener {
 
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
@@ -60,6 +63,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private static final String KEY_G_ACCOUNT_SHOWN = "g-account-shown";
 
     private static final int DIALOG_SIM_MISSING = 0;
+    private static final int DIALOG_FINISHING = 1;
 
     private ViewPager mViewPager;
     private CMPagerAdapter mPagerAdapter;
@@ -161,6 +165,12 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                                 dialogInterface.dismiss();
                             }
                         })
+                        .create();
+            case DIALOG_FINISHING:
+                return new AlertDialog.Builder(this)
+                        .setTitle(R.string.setup_finalizing)
+                        .setCancelable(false)
+                        .setView(getLayoutInflater().inflate(R.layout.setup_finalizing, null))
                         .create();
             default:
                 return super.onCreateDialog(id, args);
@@ -366,17 +376,16 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private void finishSetup() {
         handleWhisperPushRegistration();
-        handleDefaultThemeSetup();
+        boolean applyingDefaultTheme = handleDefaultThemeSetup();
 
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         ((CMAccount)AppGlobals.getInitialApplication()).enableStatusBar();
-        Intent intent = new Intent("android.intent.action.MAIN");
-        intent.addCategory("android.intent.category.HOME");
-        disableSetupWizards(intent);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
-        startActivity(intent);
-        finish();
+        if (!applyingDefaultTheme)  {
+            onFinish(false);
+        } else {
+            showDialog(DIALOG_FINISHING);
+        }
     }
 
     private boolean accountExists(String accountType) {
@@ -395,17 +404,38 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
     }
 
-    private void handleDefaultThemeSetup() {
+    private boolean handleDefaultThemeSetup() {
         Page page = getPage(R.string.setup_personalization);
         if (page == null) {
-            return;
+            return false;
         }
         Bundle privacyData = page.getData();
         if (privacyData != null && privacyData.getBoolean("apply_default_theme")) {
             Log.d(TAG, "Applying default theme");
             ThemeManager tm = (ThemeManager) this.getSystemService(Context.THEME_SERVICE);
+            tm.addClient(ThemeUtils.getDefaultThemePackageName(this), this);
             tm.applyDefaultTheme();
+            return true;
         }
+        return false;
+    }
+
+    @Override
+    public void onProgress(int progress) {}
+
+    @Override
+    public void onFinish(boolean isSuccess) {
+        try {
+            dismissDialog(DIALOG_FINISHING);
+        } catch (IllegalArgumentException e) {
+            // this will happen if we did not apply the default theme, just continue
+        }
+        Intent intent = new Intent("android.intent.action.MAIN");
+        intent.addCategory("android.intent.category.HOME");
+        disableSetupWizards(intent);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
+        startActivity(intent);
+        finish();
     }
 
     private class CMPagerAdapter extends FragmentStatePagerAdapter {
