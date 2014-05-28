@@ -24,6 +24,7 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.RemoteException;
 import android.provider.Settings;
 import android.view.IWindowManager;
@@ -70,12 +71,14 @@ public class PersonalizationPage extends Page {
     public static class PersonalizationFragment extends SetupPageFragment {
 
         ViewSwitcher mSwitcher;
+        Handler mHandler;
 
         public PersonalizationFragment() {
         }
 
         @Override
         protected void setUpPage() {
+            mHandler = new Handler();
             mSwitcher = (ViewSwitcher) mRootView.findViewById(R.id.switcher);
             if (hideWhisperPush(getActivity())) {
                 ViewGroup whisperPushLayout = (ViewGroup) mRootView.findViewById(R.id.whisperpush);
@@ -132,11 +135,27 @@ public class PersonalizationPage extends Page {
                 useNavBar.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                        writeDisableNavkeysOption(getActivity(), isChecked);
+                        mHandler.removeCallbacks(mDisableNavKeysRunnable);
+                        mHandler.removeCallbacks(mEnableNavKeysRunnable);
+                        mHandler.postDelayed(isChecked ? mEnableNavKeysRunnable : mDisableNavKeysRunnable, 500);
                     }
                 });
             }
         }
+
+        private Runnable mDisableNavKeysRunnable = new Runnable() {
+            @Override
+            public void run() {
+                writeDisableNavkeysOption(getActivity(),  false);
+            }
+        };
+
+        private Runnable mEnableNavKeysRunnable = new Runnable() {
+            @Override
+            public void run() {
+                writeDisableNavkeysOption(getActivity(),  true);
+            }
+        };
 
         @Override
         protected int getLayoutResource() {
