@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_e962cad7",
+        "filename": "src/com/cyanogenmod/account/ui/SetupWizardActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2014-05-29T09:02:47Z",
+      "side": 1,
+      "message": "Reference the Intent constants rather than hardcoding it here",
+      "revId": "22f5d4ccfb61a6df53bb8f5299d96b1b1ee78f1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_c95f060d",
+        "filename": "src/com/cyanogenmod/account/ui/SetupWizardActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2014-05-29T09:02:47Z",
+      "side": 1,
+      "message": "Use addFlags instead ?",
+      "revId": "22f5d4ccfb61a6df53bb8f5299d96b1b1ee78f1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
