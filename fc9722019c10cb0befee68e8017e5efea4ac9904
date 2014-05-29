@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_e9b92a30",
+        "filename": "src/com/cyanogenmod/account/setup/PersonalizationPage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2014-05-29T09:18:14Z",
+      "side": 1,
+      "message": "Is setUpPage() invoked once or multiple times as you swipe back/forth.\n\nIf so, perhaps move the construction of the handler to the constructor.",
+      "revId": "fc9722019c10cb0befee68e8017e5efea4ac9904",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_89aceeee",
+        "filename": "src/com/cyanogenmod/account/setup/PersonalizationPage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2014-05-29T09:18:14Z",
+      "side": 1,
+      "message": "The behaviour we have in the settings app is inconsistent with this.\n\nOver there we disable the toggle and delay for 1s (1000ms) after which we enable it again.\n\nConsidering this is the setup wizard, and is more prominent, should we let the user know whats happening post click ? Something like \"Toggling navbar state..etc or w/e\".",
+      "revId": "fc9722019c10cb0befee68e8017e5efea4ac9904",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
