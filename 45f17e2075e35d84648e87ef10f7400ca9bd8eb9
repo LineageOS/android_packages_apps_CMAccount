@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_c42c0dae",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2014-05-31T02:33:23Z",
+      "side": 1,
+      "message": "Existente",
+      "revId": "45f17e2075e35d84648e87ef10f7400ca9bd8eb9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
