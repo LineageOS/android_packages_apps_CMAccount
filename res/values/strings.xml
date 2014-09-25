@@ -20,13 +20,13 @@
     <string name="account_name" translatable="false">CyanogenMod</string>
 
     <string name="next">Next</string>
-    <string name="continue_label">Continue</string>
-    <string name="prev">Previous</string>
-    <string name="skip">Skip</string>
-    <string name="finish">Finish</string>
-    <string name="cancel">Cancel</string>
-    <string name="create">Create</string>
-    <string name="login">Login</string>
+    <string name="continue_label">Continue\u00A0</string>
+    <string name="prev">Previous\u00A0</string>
+    <string name="skip">Skip\u00A0</string>
+    <string name="finish">Finish\u00A0</string>
+    <string name="cancel">Cancel\u00A0</string>
+    <string name="create">Create\u00A0</string>
+    <string name="login">Login\u00A0</string>
     <string name="ok">OK</string>
     <string name="existing">Existing</string>
     <string name="new_account">New</string>
