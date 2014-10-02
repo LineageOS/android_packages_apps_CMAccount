@@ -84,7 +84,7 @@
             android:excludeFromRecents="true"
             android:immersive="true"
             android:configChanges="themeChange"
-            android:screenOrientation="locked">
+            android:screenOrientation="portrait">
 
                 <intent-filter android:priority="9">
 
@@ -100,16 +100,16 @@
             android:label="@string/product_name"
             android:launchMode="singleTop"
             android:excludeFromRecents="true"
-            android:screenOrientation="locked" />
+            android:screenOrientation="portrait" />
 
         <activity android:name=".auth.AuthActivity"
             android:label="@string/product_name"
             android:launchMode="singleTop"
-            android:screenOrientation="locked" />
+            android:screenOrientation="portrait" />
 
         <activity android:name=".auth.UpdateRequiredActivity"
                   android:label="@string/product_name"
-                  android:screenOrientation="locked" />
+                  android:screenOrientation="portrait" />
 
         <receiver android:name=".gcm.GCMReceiver" android:exported="true"
             android:permission="com.google.android.c2dm.permission.SEND">
