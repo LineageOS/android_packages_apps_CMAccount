@@ -35,10 +35,9 @@ public class CMAccount extends Application implements Response.Listener<GetMinim
 
     public static final String TAG = "CMAccount";
     // Leave this off for release
-    public static final boolean DEBUG = false;
+    public static final boolean DEBUG = true;
 
     public static final String ACCOUNT_TYPE_CMAccount = "com.cyanogenmod.account";
-    public static final String ACCOUNT_TYPE_GOOGLE = "com.google";
     public static final String AUTHTOKEN_TYPE_ACCESS = "com.cyanogenmod.account";
     public static final String AUTHTOKEN_EXPIRES_IN= "com.cyanogenmod.account.auth.expires_in";
     public static final String ACCOUNT_EXTRA_DEVICE_SALT = "com.cyanogenmod.account.auth.device_salt";
@@ -90,16 +89,6 @@ public class CMAccount extends Application implements Response.Listener<GetMinim
         if (CMAccountUtils.isNetworkConnected(getApplicationContext())) {
             authClient.getMinimumAppVersion(this, this);
         }
-    }
-
-    public void disableStatusBar() {
-        mStatusBarManager.disable(StatusBarManager.DISABLE_EXPAND | StatusBarManager.DISABLE_NOTIFICATION_ALERTS
-                | StatusBarManager.DISABLE_NOTIFICATION_TICKER | StatusBarManager.DISABLE_RECENT | StatusBarManager.DISABLE_HOME
-                | StatusBarManager.DISABLE_SEARCH);
-    }
-
-    public void enableStatusBar() {
-        mStatusBarManager.disable(StatusBarManager.DISABLE_NONE);
     }
 
     public String getCMAccountUri() {
