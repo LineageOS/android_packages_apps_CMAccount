@@ -208,7 +208,7 @@ public class PersonalizationPage extends Page {
 
 
     protected static boolean hideThemeSwitch(Context context) {
-        return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.HOLO_DEFAULT);
+        return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
     }
 
     public static boolean skipPage(Context context) {

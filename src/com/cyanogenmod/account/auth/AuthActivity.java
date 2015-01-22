@@ -141,9 +141,10 @@ public class AuthActivity extends AccountAuthenticatorActivity implements Respon
     };
 
     public static void showForCreate(Activity context, int requestCode) {
-        Intent intent = new Intent(context, AuthActivity.class);
-        intent.putExtra(EXTRA_PARAM_CREATE_ACCOUNT, true);
-        context.startActivityForResult(intent, requestCode);
+        /* DEPRECATED */
+        // Intent intent = new Intent(context, AuthActivity.class);
+        // intent.putExtra(EXTRA_PARAM_CREATE_ACCOUNT, true);
+        // context.startActivityForResult(intent, requestCode);
     }
 
     public static void showForAuth(Activity context, int requestCode) {

@@ -30,6 +30,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class CMAccountPage extends Page {
 
@@ -92,9 +93,11 @@ public class CMAccountPage extends Page {
         }
 
         private void createCMAccount() {
-            Intent intent = new Intent(getActivity(), AuthActivity.class);
-            intent.putExtra(AuthActivity.EXTRA_PARAM_CREATE_ACCOUNT, true);
-            startActivityForResult(intent, CMAccount.REQUEST_CODE_SETUP_CMAccount);
+            /* DEPRECATED */
+            // Intent intent = new Intent(getActivity(), AuthActivity.class);
+            // intent.putExtra(AuthActivity.EXTRA_PARAM_CREATE_ACCOUNT, true);
+            // startActivityForResult(intent, CMAccount.REQUEST_CODE_SETUP_CMAccount);
+            Toast.makeText(getActivity(), R.string.cmaccount_deprecated, Toast.LENGTH_SHORT).show();
         }
 
         private void loginCMAccount() {

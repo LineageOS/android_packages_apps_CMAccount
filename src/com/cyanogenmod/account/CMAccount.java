@@ -45,6 +45,8 @@ public class CMAccount extends Application implements Response.Listener<GetMinim
     public static final String ACCOUNT_EXTRA_HMAC_SECRET = "com.cyanogenmod.account.auth.hmac_secret";
 
     public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
+    public static final String WIFI_COMPONENT_PKG = "com.android.settings";
+    public static final String WIFI_COMPONENT_CLASS = "com.android.settings.wifi.WifiSettings";
 
     public static final String EXTRA_FIRST_RUN = "firstRun";
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";

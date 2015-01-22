@@ -106,4 +106,6 @@
     <string name="location_neighborhood_level">Allow apps to use Google\'s location service to estimate your location faster. Anonymous location data will be collected and sent to Google.</string>
     <string name="update_icon_pack_available">An updated icon pack is available</string>
     <string name="apply_icon_pack">Apply</string>
+
+    <string name="cmaccount_deprecated">Creating a new CMAccount has been deprecated, we are working on an update.</string>
 </resources>

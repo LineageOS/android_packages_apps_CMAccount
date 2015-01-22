@@ -39,7 +39,7 @@ public class ApplyHexoIconsReceiver extends BroadcastReceiver {
             "com.cyanogenmod.account.intent.action.APPLY_HEXO_ICONS";
 
     public void onReceive(Context context, Intent intent) {
-        if (ThemeUtils.getDefaultThemePackageName(context) != ThemeConfig.HOLO_DEFAULT
+        if (ThemeUtils.getDefaultThemePackageName(context) != ThemeConfig.SYSTEM_DEFAULT
                 && isPackageInstalled(context, HEXO_ICONS_PACKAGE_NAME)) {
             ArrayList<String> componentList = new ArrayList<String>();
             componentList.add(ThemesContract.ThemesColumns.MODIFIES_ICONS);

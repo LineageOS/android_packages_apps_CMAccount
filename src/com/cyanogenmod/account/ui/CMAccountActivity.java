@@ -27,6 +27,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class CMAccountActivity extends Activity {
 
@@ -43,8 +44,9 @@ public class CMAccountActivity extends Activity {
         findViewById(R.id.new_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AuthActivity.showForCreate(CMAccountActivity.this, CMAccount.REQUEST_CODE_SETUP_CMAccount);
-
+                /* DEPRECATED */
+                // AuthActivity.showForCreate(CMAccountActivity.this, CMAccount.REQUEST_CODE_SETUP_CMAccount);
+                Toast.makeText(CMAccountActivity.this, R.string.cmaccount_deprecated, Toast.LENGTH_SHORT).show();
             }
         });
         findViewById(R.id.learn_more_button).setOnClickListener(new View.OnClickListener() {

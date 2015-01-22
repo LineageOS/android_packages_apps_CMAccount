@@ -32,6 +32,7 @@ import android.app.Fragment;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -159,14 +160,14 @@ public class CMAccountUtils {
     }
 
     private static Intent getWifiSetupIntent(Context context) {
-        Intent intent = new Intent(CMAccount.ACTION_SETUP_WIFI);
+        Intent intent = new Intent();
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        intent.setComponent(new ComponentName(CMAccount.WIFI_COMPONENT_PKG, CMAccount.WIFI_COMPONENT_CLASS));
         intent.putExtra(CMAccount.EXTRA_FIRST_RUN, true);
-        intent.putExtra(CMAccount.EXTRA_ALLOW_SKIP, true);
+        intent.putExtra(CMAccount.EXTRA_ALLOW_SKIP, false);
         intent.putExtra(CMAccount.EXTRA_SHOW_BUTTON_BAR, true);
         intent.putExtra(CMAccount.EXTRA_ONLY_ACCESS_POINTS, true);
-        intent.putExtra(CMAccount.EXTRA_SHOW_SKIP, true);
         intent.putExtra(CMAccount.EXTRA_AUTO_FINISH, true);
-        intent.putExtra(CMAccount.EXTRA_PREF_BACK_TEXT, context.getString(R.string.skip));
         return intent;
     }
 
