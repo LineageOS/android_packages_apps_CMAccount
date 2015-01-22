@@ -15,13 +15,5 @@
      limitations under the License.
 -->
 <resources>
-    <dimen name="header_height">220dp</dimen>
-    <dimen name="page_title_height">56dp</dimen>
-    <dimen name="header_title_margin_left">26dp</dimen>
-    <dimen name="content_margin_top">26dp</dimen>
-    <dimen name="content_margin_left">26dp</dimen>
-    <dimen name="content_margin_right">26dp</dimen>
-    <dimen name="content_margin_bottom">20dp</dimen>
-    <dimen name="summary_margin_bottom">20dp</dimen>
-    <dimen name="setup_line_spacing">3sp</dimen>
+     <color name="status_bar">@color/primary_dark</color>
 </resources>

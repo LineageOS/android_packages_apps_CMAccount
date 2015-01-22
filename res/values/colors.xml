@@ -16,16 +16,15 @@
 -->
 <resources>
     <color name="black">#000000</color>
-    <color name="dark_gray">#ff1c1c1c</color>
     <color name="white">#ffffff</color>
-    <color name="light_gray">#ffdbdbdb</color>
-    <color name="shadow_gray">#888c8c8c</color>
-    <color name="holo_blue_light">#ff33b5e5</color>
-    <color name="holo_blue_dark">#ff0099cc</color>
-    <color name="holo_blue_bright">#ff00ddff</color>
-    <color name="holo_green_light">#ff99cc00</color>
-    <color name="holo_green_dark">#ff669900</color>
-    <color name="holo_red_light">#ffff4444</color>
-    <color name="holo_red_dark">#ffcc0000</color>
-    <color name="preview_image_disabled">#ddcccccc</color>
+    <color name="window_background">#e4e7e8</color>
+    <color name="page_background">#efefef</color>
+
+    <color name="primary">#00B1E5</color>
+    <color name="primary_dark">#00A2E5</color>
+    <color name="accent">#009789</color>
+    <color name="primary_text">#8a000000</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#40000000</color>
+    <color name="status_bar">@color/primary</color>
 </resources>
