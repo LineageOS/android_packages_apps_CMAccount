@@ -16,6 +16,24 @@
       "revId": "62a10da90df7d82a3cff595a85461e4d60f959b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fad55976_bf25abaf",
+        "filename": "src/com/cyanogenmod/account/CMAccount.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2015-01-23T12:11:26Z",
+      "side": 1,
+      "message": "oops",
+      "parentUuid": "fad55976_1f10374e",
+      "revId": "62a10da90df7d82a3cff595a85461e4d60f959b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
