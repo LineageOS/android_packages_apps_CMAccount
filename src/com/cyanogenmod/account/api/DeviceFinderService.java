@@ -40,6 +40,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
 public class DeviceFinderService extends Service implements LocationListener,
@@ -92,12 +93,15 @@ public class DeviceFinderService extends Service implements LocationListener,
             final Context context = getApplicationContext();
             mIsRunning = true;
             final ContentResolver contentResolver = getContentResolver();
-            boolean gpsEnabled = Settings.Secure.isLocationProviderEnabled(
-                    contentResolver, LocationManager.GPS_PROVIDER);
-            if (!gpsEnabled) {
-                Settings.Secure.setLocationProviderEnabled(contentResolver,
-                    LocationManager.GPS_PROVIDER, true);
+            try {
+                int currentLocationMode = Settings.Secure.getInt(contentResolver, Settings.Secure.LOCATION_MODE);
+                if (currentLocationMode != Settings.Secure.LOCATION_MODE_HIGH_ACCURACY) {
+                    Settings.Secure.putInt(contentResolver, Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_HIGH_ACCURACY);
+                }
+            } catch (SettingNotFoundException e) {
+            	Log.e(TAG, "Unable find location settings.", e);
             }
+
             mAuthClient = AuthClient.getInstance(context);
             mLocationClient = new LocationClient(context, this, this);
             mLocationClient.connect();
