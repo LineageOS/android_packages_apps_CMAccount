@@ -48,8 +48,6 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Base64;
 import android.util.Log;
-import org.apache.commons.codec.DecoderException;
-import org.apache.commons.codec.binary.Hex;
 import org.spongycastle.math.ec.ECFieldElement;
 
 import java.math.BigInteger;
@@ -61,8 +59,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Pattern;
-
-import org.apache.commons.codec.binary.Hex;
 
 public class CMAccountUtils {
 
@@ -281,7 +277,7 @@ public class CMAccountUtils {
     }
 
     public static String encodeHex(byte[] bytes) {
-        return new String(Hex.encodeHex(bytes));
+        return new String(encodeHex(bytes));
     }
 
     public static String encodeHex(BigInteger integer) {
@@ -290,8 +286,8 @@ public class CMAccountUtils {
 
     public static byte[] decodeHex(String hex) {
         try {
-            return Hex.decodeHex(hex.toCharArray());
-        } catch (DecoderException e) {
+            return decodeHex(hex.toString());
+        } catch (Exception e) {
             Log.e(TAG, "Unable to decode hex string", e);
             throw new AssertionError(e);
         }
