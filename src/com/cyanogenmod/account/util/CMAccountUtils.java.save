@@ -48,6 +48,7 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Base64;
 import android.util.Log;
+import org.apache.commons.codec.binary.Hex;
 import org.spongycastle.math.ec.ECFieldElement;
 
 import java.math.BigInteger;
@@ -61,6 +62,15 @@ import java.util.Random;
 import java.util.regex.Pattern;
 
 public class CMAccountUtils {
+
+    /**
+     * See org.apache.commons.codec.DecoderException
+     */
+    private static class DecoderException extends Exception {
+        public DecoderException(String pMessage) {
+            super(pMessage);
+        }
+    }
 
     private static final String TAG = CMAccountUtils.class.getSimpleName();
     private static final Random sRandom = new Random();
@@ -277,7 +287,7 @@ public class CMAccountUtils {
     }
 
     public static String encodeHex(byte[] bytes) {
-        return new String(encodeHex(bytes));
+        return new String(Hex.encodeHex(bytes));
     }
 
     public static String encodeHex(BigInteger integer) {
@@ -286,8 +296,8 @@ public class CMAccountUtils {
 
     public static byte[] decodeHex(String hex) {
         try {
-            return decodeHex(hex.toString());
-        } catch (Exception e) {
+            return Hex.decodeHex(hex.toCharArray());
+        } catch (DecoderException e) {
             Log.e(TAG, "Unable to decode hex string", e);
             throw new AssertionError(e);
         }
